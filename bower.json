@@ -1,0 +1,21 @@
+{
+  "name": "wplBerton",
+  "homepage": "https://github.com/bertonbeil/wplBertonbeil",
+  "description": "-",
+  "main": "",
+  "authors": [
+    "Andrew Dmytriv"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.1.1"
+  }
+}
