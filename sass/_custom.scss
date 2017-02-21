@@ -1,3 +1,56 @@
 body {
   font-family: Roboto, sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 100%;
+  width: 100%;
+}
+// header
+header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+  background: rgba(245, 251, 248, .5);
+  z-index: 99;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .26);
+}
+a.h-logo {
+  font-size: 24px;
+  color: #34B46A;
+}
+a.h-github {
+  float: right;
+  font-size: 24px;
+  color: #D9EDE6;
+}
+.text-center {
+  text-align: center;
+}
+// cover
+section.main-cover {
+  height: 100vh;
+  background: #3398B4;
+  background: -webkit-linear-gradient(to left, #3398B4 , #69B263);
+  background: linear-gradient(to left, #3398B4 , #69B263);
+}
+.into-text {
+  color: #D9EDE6;
+  font-size: 46px;
+  font-weight: 100;
+  margin: 20px 0;
+  span {
+    font-weight: 300;
+  }
+}
