@@ -1,0 +1,3 @@
+@mixin tr( $time ) {
+  transition: all $time+s ease-in-out;
+}
