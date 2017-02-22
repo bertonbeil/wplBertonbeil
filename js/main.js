@@ -15,3 +15,35 @@ $(window).bind('scroll', function () {
         $('.header').removeClass('fixed');
     }
 });
+
+// modal window
+this.body = $('body');
+this.modal = $('#modalMore');
+this.modalBtn = $('#moreBtn');
+this.closeBtn = $('a.close');
+
+
+modalBtn.on('click',  function () {
+
+  if( body.hasClass('open-modal') || modal.hasClass('open') ) {
+    closeModal();
+  } else {
+    openModal();
+  }
+
+  closeBtn.on('click', function () {
+    closeModal();
+  });
+});
+
+
+function openModal() {
+  body.addClass('open-modal');
+  modal.addClass('open');
+}
+function closeModal() {
+  body.removeClass('open-modal');
+  modal.removeClass('open');
+}
+
+console.log(modalBtn);
