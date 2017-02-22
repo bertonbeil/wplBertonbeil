@@ -2,7 +2,11 @@ $w: #fff;
 $b: #000;
 $tr: transparent;
 $bg: #EEF3F7;
+$greyText: #333;
+$cello: #385063;
 $darkGrey: #385063;
+$aliceBlue: #F7FAFB;
+$patternBlue: #D3E9FA;
 $blue: #097cf3;
 body {
   font-family: 'Droid Serif', serif;
@@ -24,18 +28,51 @@ section {
 }
 // header
 header.header {
-  position: fixed;
+  position: absolute;
   top: 150px;
   left: 0;
   height: 80px;
   width: 100%;
   line-height: 80px;
   z-index: 99;
-  // box-shadow: 0 3px 6px rgba(0, 0, 0, .26);
+  transition: height .3s ease-in-out;
 }
+header.fixed {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  line-height: 60px;
+  background: #E1F5FE;
+  background: linear-gradient(356deg, #0091ea, #4a148c);
+  background-size: 200% 200%;
+
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .46);
+}
+// anim
+@-webkit-keyframes AnimationName {
+    0%{background-position:57% 0%}
+    50%{background-position:44% 100%}
+    100%{background-position:57% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:57% 0%}
+    50%{background-position:44% 100%}
+    100%{background-position:57% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:57% 0%}
+    50%{background-position:44% 100%}
+    100%{background-position:57% 0%}
+}
+
 a.h-logo {
   font-size: 24px;
   color: #34B46A;
+  transition: all .2s ease-in-out;
 }
 ul.nav-list {
   float: right;
@@ -72,9 +109,9 @@ ul.nav-list {
   text-align: right;
 }
 // cover
-section.main-cover {
-  height: 100vh;
-}
+// section.main-cover {
+//   height: 100vh;
+// }
 .welcom-box {
   margin-top: 160px;
 }
@@ -119,4 +156,94 @@ ul.i-link-list {
   padding: 0 15px;
 }
 
+<<<<<<< HEAD
 // dd
+=======
+
+section.portfolio {
+  background: $aliceBlue;
+}
+.p-box {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  max-height: 420px;
+  border-radius: 7px;
+  overflow: hidden;
+  cursor: pointer;
+  @include tr(.2);
+  box-shadow: 1px 3px 6px rgba($cello, .3);
+
+  &:hover {
+    box-shadow: 2px 6px 10px rgba($cello, 0.6)
+  }
+  &:hover .p-cover {
+    filter: blur(8px);
+  }
+  &:hover .info-overlay {
+    background: rgba($cello, .6);
+  }
+  &:hover .p-title {
+    color: $aliceBlue;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  &:hover .p-description {
+    color: $bg;
+    bottom: 20px;
+    left: 20px;
+  }
+}
+.p-cover-box {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 420px;
+  border-radius: 7px;
+  overflow: hidden;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+
+}
+.p-cover {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+.info-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 7px;
+  z-index: 99;
+  @include tr(.2);
+  background: rgba($cello, .3);
+}
+.p-title {
+  color: $cello;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: center;
+  @include tr(.2);
+}
+.p-seperetor {
+  width: 100%;
+  height: 1px;
+  background: #000;
+  margin-top: 130px;
+  margin-bottom: 90px;
+}
+.round-chart {
+  width: 120px;
+  height: 120px;
+  border: 1px solid $blue;
+  border-radius: 50%;
+  margin: 30px auto;
+}
+>>>>>>> dev
