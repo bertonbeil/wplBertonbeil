@@ -39,9 +39,6 @@ a.h-logo {
 }
 ul.nav-list {
   float: right;
-  &:hover li div {
-    transform: rotate(90deg);
-  }
   > li {
     display: inline-block;
     a {
@@ -52,15 +49,15 @@ ul.nav-list {
         border-color: $b;
       }
     }
-    div {
-      height: 2px;
-      width: 18px;
-      margin-top: -8px;
-      background: #000;
-      transform: rotate(115deg);
-      @include tr(.2);
-    }
   }
+}
+.slash{
+  height: 2px;
+  width: 18px;
+  margin-top: -8px;
+  background: #000;
+  @include tr(.2);
+  transform:rotate(90deg);
 }
 .text-center {
   text-align: center;
