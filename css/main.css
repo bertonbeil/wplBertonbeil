@@ -1840,38 +1840,37 @@ section.portfolio {
   height: 420px;
   max-height: 420px;
   border-radius: 7px;
-  overflow: visible;
+  overflow: hidden;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   box-shadow: 1px 3px 6px rgba(56, 80, 99, 0.3);
 }
 /* line 174, ../sass/_custom.scss */
 .p-box:hover {
-  overflow: visible;
   box-shadow: 2px 6px 10px rgba(56, 80, 99, 0.6);
 }
-/* line 178, ../sass/_custom.scss */
+/* line 177, ../sass/_custom.scss */
 .p-box:hover .p-cover {
   filter: blur(8px);
 }
-/* line 181, ../sass/_custom.scss */
+/* line 180, ../sass/_custom.scss */
 .p-box:hover .info-overlay {
   background: rgba(56, 80, 99, 0.6);
 }
-/* line 184, ../sass/_custom.scss */
+/* line 183, ../sass/_custom.scss */
 .p-box:hover .p-title {
   color: #F7FAFB;
   margin-top: 0;
   margin-left: 0;
 }
-/* line 189, ../sass/_custom.scss */
+/* line 188, ../sass/_custom.scss */
 .p-box:hover .p-description {
   color: #EEF3F7;
   bottom: 20px;
   left: 20px;
 }
 
-/* line 195, ../sass/_custom.scss */
+/* line 194, ../sass/_custom.scss */
 .p-cover-box {
   position: absolute;
   top: 0px;
@@ -1883,14 +1882,14 @@ section.portfolio {
   -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 }
 
-/* line 206, ../sass/_custom.scss */
+/* line 205, ../sass/_custom.scss */
 .p-cover {
   position: absolute;
   top: -10px;
   left: -10px;
 }
 
-/* line 211, ../sass/_custom.scss */
+/* line 210, ../sass/_custom.scss */
 .info-overlay {
   position: absolute;
   top: 0;
@@ -1906,34 +1905,30 @@ section.portfolio {
   background: rgba(56, 80, 99, 0.3);
 }
 
-/* line 225, ../sass/_custom.scss */
+/* line 224, ../sass/_custom.scss */
 .p-title {
-  width: 50%;
   color: #385063;
   font-size: 24px;
   font-weight: 400;
-  margin-bottom: 20px;
-  margin-top: -60px;
-  margin-left: -20px;
+  margin-bottom: 10px;
+  text-align: center;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 235, ../sass/_custom.scss */
-.p-description {
-  position: absolute;
-  width: 50%;
-  bottom: -95px;
-  left: 0;
-  line-height: 1.3;
-  color: #333;
-  transition: all 0.2s ease-in-out;
-}
-
-/* line 244, ../sass/_custom.scss */
+/* line 232, ../sass/_custom.scss */
 .p-seperetor {
   width: 100%;
   height: 1px;
   background: #000;
   margin-top: 130px;
   margin-bottom: 90px;
+}
+
+/* line 239, ../sass/_custom.scss */
+.round-chart {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #097cf3;
+  border-radius: 50%;
+  margin: 30px auto;
 }
