@@ -74,7 +74,6 @@ ul.nav-list {
 // cover
 section.main-cover {
   height: 100vh;
-  background: $w;
 }
 .welcom-box {
   margin-top: 160px;
@@ -107,4 +106,15 @@ ul.i-link-list {
       }
     }
   }
+}
+
+
+// svg
+#svg-container {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1140px;
+  height: 100%;
+  padding: 0 15px;
 }
