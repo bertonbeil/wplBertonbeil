@@ -1,4 +1,4 @@
-nav scroll
+// nav scroll
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > 150) {
         $('.header').addClass('fixed');
