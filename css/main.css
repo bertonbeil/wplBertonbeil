@@ -1,68 +1,1934 @@
-/*
-Error: Invalid CSS after ">>>>>>> dev": expected "{", was ""
-        on line 250 of D:/bertonbeilCorp/sass/_custom.scss
-        from line 4 of D:/bertonbeilCorp/sass/main.scss
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,700|Droid+Serif:400,700");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-245:   border: 1px solid $blue;
-246:   border-radius: 50%;
-247:   margin: 30px auto;
-248: }
-249: >>>>>>> dev
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
 
-Backtrace:
-D:/bertonbeilCorp/sass/_custom.scss:250
-D:/bertonbeilCorp/sass/main.scss:4
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \">>>>>>> dev\": expected \"{\", was \"\"\A         on line 250 of D:/bertonbeilCorp/sass/_custom.scss\A         from line 4 of D:/bertonbeilCorp/sass/main.scss\A \A 245:   border: 1px solid $blue;\A 246:   border-radius: 50%;\A 247:   margin: 30px auto;\A 248: }\A 249: >>>>>>> dev"; }
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+/* line 14, ../bower_components/bootstrap/scss/bootstrap-grid.scss */
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+/* line 19, ../bower_components/bootstrap/scss/bootstrap-grid.scss */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* line 6, ../bower_components/bootstrap/scss/_grid.scss */
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 576px) {
+  /* line 6, ../bower_components/bootstrap/scss/_grid.scss */
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 6, ../bower_components/bootstrap/scss/_grid.scss */
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 6, ../bower_components/bootstrap/scss/_grid.scss */
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 6, ../bower_components/bootstrap/scss/_grid.scss */
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 576px) {
+  /* line 6, ../bower_components/bootstrap/scss/_grid.scss */
+  .container {
+    width: 540px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 6, ../bower_components/bootstrap/scss/_grid.scss */
+  .container {
+    width: 720px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 6, ../bower_components/bootstrap/scss/_grid.scss */
+  .container {
+    width: 960px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 6, ../bower_components/bootstrap/scss/_grid.scss */
+  .container {
+    width: 1140px;
+    max-width: 100%;
+  }
+}
+
+/* line 18, ../bower_components/bootstrap/scss/_grid.scss */
+.container-fluid {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 576px) {
+  /* line 18, ../bower_components/bootstrap/scss/_grid.scss */
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 18, ../bower_components/bootstrap/scss/_grid.scss */
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 18, ../bower_components/bootstrap/scss/_grid.scss */
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 18, ../bower_components/bootstrap/scss/_grid.scss */
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/* line 28, ../bower_components/bootstrap/scss/_grid.scss */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 576px) {
+  /* line 28, ../bower_components/bootstrap/scss/_grid.scss */
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 28, ../bower_components/bootstrap/scss/_grid.scss */
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 28, ../bower_components/bootstrap/scss/_grid.scss */
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 28, ../bower_components/bootstrap/scss/_grid.scss */
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+/* line 34, ../bower_components/bootstrap/scss/_grid.scss */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+/* line 38, ../bower_components/bootstrap/scss/_grid.scss */
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 8, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 576px) {
+  /* line 8, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 8, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 8, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 8, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/* line 31, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+/* line 36, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+/* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.col-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+
+/* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.col-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+
+/* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+/* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.col-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+/* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.col-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
+
+/* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.col-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
+
+/* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.col-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+/* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+/* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.col-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+
+/* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.col-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
+}
+
+/* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.pull-0 {
+  right: auto;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.pull-1 {
+  right: 8.33333%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.pull-2 {
+  right: 16.66667%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.pull-3 {
+  right: 25%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.pull-4 {
+  right: 33.33333%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.pull-5 {
+  right: 41.66667%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.pull-6 {
+  right: 50%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.pull-7 {
+  right: 58.33333%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.pull-8 {
+  right: 66.66667%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.pull-9 {
+  right: 75%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.pull-10 {
+  right: 83.33333%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.pull-11 {
+  right: 91.66667%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.pull-12 {
+  right: 100%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.push-0 {
+  left: auto;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.push-1 {
+  left: 8.33333%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.push-2 {
+  left: 16.66667%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.push-3 {
+  left: 25%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.push-4 {
+  left: 33.33333%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.push-5 {
+  left: 41.66667%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.push-6 {
+  left: 50%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.push-7 {
+  left: 58.33333%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.push-8 {
+  left: 66.66667%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.push-9 {
+  left: 75%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.push-10 {
+  left: 83.33333%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.push-11 {
+  left: 91.66667%;
+}
+
+/* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.push-12 {
+  left: 100%;
+}
+
+/* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.offset-1 {
+  margin-left: 8.33333%;
+}
+
+/* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.offset-2 {
+  margin-left: 16.66667%;
+}
+
+/* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.offset-3 {
+  margin-left: 25%;
+}
+
+/* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.offset-4 {
+  margin-left: 33.33333%;
+}
+
+/* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.offset-5 {
+  margin-left: 41.66667%;
+}
+
+/* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.offset-6 {
+  margin-left: 50%;
+}
+
+/* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.offset-7 {
+  margin-left: 58.33333%;
+}
+
+/* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.offset-8 {
+  margin-left: 66.66667%;
+}
+
+/* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.offset-9 {
+  margin-left: 75%;
+}
+
+/* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.offset-10 {
+  margin-left: 83.33333%;
+}
+
+/* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+.offset-11 {
+  margin-left: 91.66667%;
+}
+
+@media (min-width: 576px) {
+  /* line 31, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-sm {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  /* line 36, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-sm-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-sm-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-sm-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-sm-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-sm-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-sm-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-sm-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-sm-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-sm-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-sm-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-sm-0 {
+    right: auto;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-sm-1 {
+    right: 8.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-sm-2 {
+    right: 16.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-sm-3 {
+    right: 25%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-sm-4 {
+    right: 33.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-sm-5 {
+    right: 41.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-sm-6 {
+    right: 50%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-sm-7 {
+    right: 58.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-sm-8 {
+    right: 66.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-sm-9 {
+    right: 75%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-sm-10 {
+    right: 83.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-sm-11 {
+    right: 91.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-sm-12 {
+    right: 100%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-sm-0 {
+    left: auto;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-sm-1 {
+    left: 8.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-sm-2 {
+    left: 16.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-sm-3 {
+    left: 25%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-sm-4 {
+    left: 33.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-sm-5 {
+    left: 41.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-sm-6 {
+    left: 50%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-sm-7 {
+    left: 58.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-sm-8 {
+    left: 66.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-sm-9 {
+    left: 75%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-sm-10 {
+    left: 83.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-sm-11 {
+    left: 91.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-sm-12 {
+    left: 100%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-sm-0 {
+    margin-left: 0%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-sm-1 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-sm-2 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-sm-3 {
+    margin-left: 25%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-sm-4 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-sm-5 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-sm-6 {
+    margin-left: 50%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-sm-7 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-sm-8 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-sm-9 {
+    margin-left: 75%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-sm-10 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-sm-11 {
+    margin-left: 91.66667%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 31, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-md {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  /* line 36, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-md-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-md-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-md-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-md-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-md-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-md-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-md-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-md-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-md-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-md-0 {
+    right: auto;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-md-1 {
+    right: 8.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-md-2 {
+    right: 16.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-md-3 {
+    right: 25%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-md-4 {
+    right: 33.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-md-5 {
+    right: 41.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-md-6 {
+    right: 50%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-md-7 {
+    right: 58.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-md-8 {
+    right: 66.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-md-9 {
+    right: 75%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-md-10 {
+    right: 83.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-md-11 {
+    right: 91.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-md-12 {
+    right: 100%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-md-0 {
+    left: auto;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-md-1 {
+    left: 8.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-md-2 {
+    left: 16.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-md-3 {
+    left: 25%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-md-4 {
+    left: 33.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-md-5 {
+    left: 41.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-md-6 {
+    left: 50%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-md-7 {
+    left: 58.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-md-8 {
+    left: 66.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-md-9 {
+    left: 75%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-md-10 {
+    left: 83.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-md-11 {
+    left: 91.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-md-12 {
+    left: 100%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-md-0 {
+    margin-left: 0%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-md-1 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-md-2 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-md-3 {
+    margin-left: 25%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-md-4 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-md-5 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-md-6 {
+    margin-left: 50%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-md-7 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-md-8 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-md-9 {
+    margin-left: 75%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-md-10 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-md-11 {
+    margin-left: 91.66667%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 31, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-lg {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  /* line 36, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-lg-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-lg-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-lg-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-lg-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-lg-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-lg-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-lg-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-lg-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-lg-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-lg-0 {
+    right: auto;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-lg-1 {
+    right: 8.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-lg-2 {
+    right: 16.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-lg-3 {
+    right: 25%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-lg-4 {
+    right: 33.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-lg-5 {
+    right: 41.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-lg-6 {
+    right: 50%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-lg-7 {
+    right: 58.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-lg-8 {
+    right: 66.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-lg-9 {
+    right: 75%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-lg-10 {
+    right: 83.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-lg-11 {
+    right: 91.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-lg-12 {
+    right: 100%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-lg-0 {
+    left: auto;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-lg-1 {
+    left: 8.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-lg-2 {
+    left: 16.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-lg-3 {
+    left: 25%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-lg-4 {
+    left: 33.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-lg-5 {
+    left: 41.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-lg-6 {
+    left: 50%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-lg-7 {
+    left: 58.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-lg-8 {
+    left: 66.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-lg-9 {
+    left: 75%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-lg-10 {
+    left: 83.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-lg-11 {
+    left: 91.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-lg-12 {
+    left: 100%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-lg-0 {
+    margin-left: 0%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-lg-1 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-lg-2 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-lg-3 {
+    margin-left: 25%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-lg-4 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-lg-5 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-lg-6 {
+    margin-left: 50%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-lg-7 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-lg-8 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-lg-9 {
+    margin-left: 75%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-lg-10 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-lg-11 {
+    margin-left: 91.66667%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 31, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-xl {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  /* line 36, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-xl-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-xl-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-xl-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-xl-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-xl-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-xl-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-xl-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-xl-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-xl-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-xl-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-xl-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-xl-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+
+  /* line 42, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .col-xl-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-xl-0 {
+    right: auto;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-xl-1 {
+    right: 8.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-xl-2 {
+    right: 16.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-xl-3 {
+    right: 25%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-xl-4 {
+    right: 33.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-xl-5 {
+    right: 41.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-xl-6 {
+    right: 50%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-xl-7 {
+    right: 58.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-xl-8 {
+    right: 66.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-xl-9 {
+    right: 75%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-xl-10 {
+    right: 83.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-xl-11 {
+    right: 91.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .pull-xl-12 {
+    right: 100%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-xl-0 {
+    left: auto;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-xl-1 {
+    left: 8.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-xl-2 {
+    left: 16.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-xl-3 {
+    left: 25%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-xl-4 {
+    left: 33.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-xl-5 {
+    left: 41.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-xl-6 {
+    left: 50%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-xl-7 {
+    left: 58.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-xl-8 {
+    left: 66.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-xl-9 {
+    left: 75%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-xl-10 {
+    left: 83.33333%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-xl-11 {
+    left: 91.66667%;
+  }
+
+  /* line 49, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .push-xl-12 {
+    left: 100%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-xl-0 {
+    margin-left: 0%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-xl-1 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-xl-2 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-xl-3 {
+    margin-left: 25%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-xl-4 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-xl-5 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-xl-6 {
+    margin-left: 50%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-xl-7 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-xl-8 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-xl-9 {
+    margin-left: 75%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-xl-10 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 58, ../bower_components/bootstrap/scss/mixins/_grid-framework.scss */
+  .offset-xl-11 {
+    margin-left: 91.66667%;
+  }
+}
+/* line 11, ../sass/_custom.scss */
+body {
+  font-family: 'Droid Serif', serif;
+  font-family: 'Arvo', serif;
+}
+
+/* line 16, ../sass/_custom.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 21, ../sass/_custom.scss */
+section {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 100%;
+  width: 100%;
+  color: #EEF3F7;
+}
+
+/* line 30, ../sass/_custom.scss */
+header.header {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+  z-index: 99;
+  transition: height .3s ease-in-out;
+}
+
+/* line 40, ../sass/_custom.scss */
+header.fixed {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  line-height: 60px;
+  background: #E1F5FE;
+  background: linear-gradient(356deg, #0091ea, #4a148c);
+  background-size: 200% 200%;
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.46);
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 57% 0%;
+  }
+  50% {
+    background-position: 44% 100%;
+  }
+  100% {
+    background-position: 57% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 57% 0%;
+  }
+  50% {
+    background-position: 44% 100%;
+  }
+  100% {
+    background-position: 57% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 57% 0%;
+  }
+  50% {
+    background-position: 44% 100%;
+  }
+  100% {
+    background-position: 57% 0%;
+  }
+}
+/* line 72, ../sass/_custom.scss */
+a.h-logo {
+  font-size: 24px;
+  color: #34B46A;
+  transition: all .2s ease-in-out;
+}
+
+/* line 77, ../sass/_custom.scss */
+ul.nav-list {
+  float: right;
+}
+/* line 79, ../sass/_custom.scss */
+ul.nav-list:hover li div {
+  transform: rotate(90deg);
+}
+/* line 82, ../sass/_custom.scss */
+ul.nav-list > li {
+  display: inline-block;
+}
+/* line 84, ../sass/_custom.scss */
+ul.nav-list > li a {
+  font-size: 22px;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+/* line 88, ../sass/_custom.scss */
+ul.nav-list > li a:hover {
+  border-color: #000;
+}
+/* line 92, ../sass/_custom.scss */
+ul.nav-list > li div {
+  height: 2px;
+  width: 18px;
+  margin-top: -8px;
+  background: #000;
+  transform: rotate(115deg);
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 102, ../sass/_custom.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 105, ../sass/_custom.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 108, ../sass/_custom.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 115, ../sass/_custom.scss */
+.welcom-box {
+  margin-top: 160px;
+}
+
+/* line 118, ../sass/_custom.scss */
+.into-text {
+  color: #000;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 20px 0;
+  line-height: 1.3;
+}
+/* line 124, ../sass/_custom.scss */
+.into-text span {
+  font-weight: 100;
+}
+
+/* line 129, ../sass/_custom.scss */
+ul.i-link-list {
+  margin-top: 35px;
+  float: left;
+}
+/* line 133, ../sass/_custom.scss */
+ul.i-link-list > li {
+  display: inline-block;
+}
+/* line 136, ../sass/_custom.scss */
+ul.i-link-list > li a {
+  font-size: 21px;
+  color: #097cf3;
+  margin-right: 20px;
+  transition: all 0.2s ease-in-out;
+}
+/* line 141, ../sass/_custom.scss */
+ul.i-link-list > li a:hover {
+  color: rgba(9, 124, 243, 0.4);
+}
+
+/* line 150, ../sass/_custom.scss */
+#svg-container {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1140px;
+  height: 100%;
+  padding: 0 15px;
+}
+
+/* line 159, ../sass/_custom.scss */
+section.portfolio {
+  background: #F7FAFB;
+}
+
+/* line 162, ../sass/_custom.scss */
+.p-box {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  max-height: 420px;
+  border-radius: 7px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 1px 3px 6px rgba(56, 80, 99, 0.3);
+}
+/* line 173, ../sass/_custom.scss */
+.p-box:hover {
+  box-shadow: 2px 6px 10px rgba(56, 80, 99, 0.6);
+}
+/* line 176, ../sass/_custom.scss */
+.p-box:hover .p-cover {
+  filter: blur(8px);
+}
+/* line 179, ../sass/_custom.scss */
+.p-box:hover .info-overlay {
+  background: rgba(56, 80, 99, 0.6);
+}
+/* line 182, ../sass/_custom.scss */
+.p-box:hover .p-title {
+  color: #F7FAFB;
+  margin-top: 0;
+  margin-left: 0;
+}
+/* line 187, ../sass/_custom.scss */
+.p-box:hover .p-description {
+  color: #EEF3F7;
+  bottom: 20px;
+  left: 20px;
+}
+
+/* line 193, ../sass/_custom.scss */
+.p-cover-box {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 420px;
+  border-radius: 7px;
+  overflow: hidden;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+
+/* line 204, ../sass/_custom.scss */
+.p-cover {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+/* line 209, ../sass/_custom.scss */
+.info-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 7px;
+  z-index: 99;
+  transition: all 0.2s ease-in-out;
+  background: rgba(56, 80, 99, 0.3);
+}
+
+/* line 223, ../sass/_custom.scss */
+.p-title {
+  color: #385063;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 231, ../sass/_custom.scss */
+.p-seperetor {
+  width: 100%;
+  height: 1px;
+  background: #000;
+  margin-top: 130px;
+  margin-bottom: 90px;
+}
+
+/* line 238, ../sass/_custom.scss */
+.round-chart {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #097cf3;
+  border-radius: 50%;
+  margin: 30px auto;
+}
