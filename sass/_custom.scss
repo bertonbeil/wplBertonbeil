@@ -24,18 +24,27 @@ section {
 }
 // header
 header.header {
-  position: fixed;
+  position: absolute;
   top: 150px;
   left: 0;
   height: 80px;
   width: 100%;
   line-height: 80px;
   z-index: 99;
-  // box-shadow: 0 3px 6px rgba(0, 0, 0, .26);
+  transition: height .3s ease-in-out;
+}
+header.fixed {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  line-height: 60px;
+  background: rgba($w, .8);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .26);
 }
 a.h-logo {
   font-size: 24px;
   color: #34B46A;
+  transition: all .2s ease-in-out;
 }
 ul.nav-list {
   float: right;
@@ -72,9 +81,9 @@ ul.nav-list {
   text-align: right;
 }
 // cover
-section.main-cover {
-  height: 100vh;
-}
+// section.main-cover {
+//   height: 100vh;
+// }
 .welcom-box {
   margin-top: 160px;
 }
@@ -117,4 +126,19 @@ ul.i-link-list {
   width: 1140px;
   height: 100%;
   padding: 0 15px;
+}
+
+.p-box {
+  position: relative;
+}
+.p-cover {
+  max-width: 100%;
+}
+.p-title {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  color: $w;
+  font-size: 24px;
+  margin: 10px 0;
 }

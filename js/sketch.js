@@ -6,11 +6,20 @@ console.log(cH);
 function setup() {
   canvas = createCanvas(cW, cH);
   canvas.parent('svg-container');
+
 }
 
+var y = 0;
 function draw() {
   background('rgba(0,0,0, .0)');
   fill(255);
+  frameRate(30);
+  y = y + 31;
+  // console.log(cH);
+  if (y > cH) {
+    // console.log(y);
+    y = height;
+  }
 
     var start = 0;
     var step = 0;
@@ -22,9 +31,8 @@ function draw() {
     var step5 = step4 + step1;
     var step6 = step5 + step1;
     var height = cH;
-
-    stroke(153);
-    line(step, start, step, height);
+    stroke(210, 216, 221);
+    line(step, start, step, y);
     line(step1, start, step1, height);
     line(step2, start, step2, height);
     line(step3, start, step3, height);

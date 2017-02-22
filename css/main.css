@@ -1667,44 +1667,56 @@ section {
 
 /* line 26, ../sass/_custom.scss */
 header.header {
-  position: fixed;
+  position: absolute;
   top: 150px;
   left: 0;
   height: 80px;
   width: 100%;
   line-height: 80px;
   z-index: 99;
+  transition: height .3s ease-in-out;
 }
 
 /* line 36, ../sass/_custom.scss */
+header.fixed {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  line-height: 60px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.26);
+}
+
+/* line 44, ../sass/_custom.scss */
 a.h-logo {
   font-size: 24px;
   color: #34B46A;
+  transition: all .2s ease-in-out;
 }
 
-/* line 40, ../sass/_custom.scss */
+/* line 49, ../sass/_custom.scss */
 ul.nav-list {
   float: right;
 }
-/* line 42, ../sass/_custom.scss */
+/* line 51, ../sass/_custom.scss */
 ul.nav-list:hover li div {
   transform: rotate(90deg);
 }
-/* line 45, ../sass/_custom.scss */
+/* line 54, ../sass/_custom.scss */
 ul.nav-list > li {
   display: inline-block;
 }
-/* line 47, ../sass/_custom.scss */
+/* line 56, ../sass/_custom.scss */
 ul.nav-list > li a {
   font-size: 22px;
   transition: all 0.2s ease-in-out;
   border-bottom: 2px solid transparent;
 }
-/* line 51, ../sass/_custom.scss */
+/* line 60, ../sass/_custom.scss */
 ul.nav-list > li a:hover {
   border-color: #000;
 }
-/* line 55, ../sass/_custom.scss */
+/* line 64, ../sass/_custom.scss */
 ul.nav-list > li div {
   height: 2px;
   width: 18px;
@@ -1714,32 +1726,27 @@ ul.nav-list > li div {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 65, ../sass/_custom.scss */
+/* line 74, ../sass/_custom.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 68, ../sass/_custom.scss */
+/* line 77, ../sass/_custom.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 71, ../sass/_custom.scss */
+/* line 80, ../sass/_custom.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 75, ../sass/_custom.scss */
-section.main-cover {
-  height: 100vh;
-}
-
-/* line 78, ../sass/_custom.scss */
+/* line 87, ../sass/_custom.scss */
 .welcom-box {
   margin-top: 160px;
 }
 
-/* line 81, ../sass/_custom.scss */
+/* line 90, ../sass/_custom.scss */
 .into-text {
   color: #000;
   font-size: 42px;
@@ -1747,33 +1754,33 @@ section.main-cover {
   margin: 20px 0;
   line-height: 1.3;
 }
-/* line 87, ../sass/_custom.scss */
+/* line 96, ../sass/_custom.scss */
 .into-text span {
   font-weight: 100;
 }
 
-/* line 92, ../sass/_custom.scss */
+/* line 101, ../sass/_custom.scss */
 ul.i-link-list {
   margin-top: 35px;
   float: left;
 }
-/* line 96, ../sass/_custom.scss */
+/* line 105, ../sass/_custom.scss */
 ul.i-link-list > li {
   display: inline-block;
 }
-/* line 99, ../sass/_custom.scss */
+/* line 108, ../sass/_custom.scss */
 ul.i-link-list > li a {
   font-size: 21px;
   color: #097cf3;
   margin-right: 20px;
   transition: all 0.2s ease-in-out;
 }
-/* line 104, ../sass/_custom.scss */
+/* line 113, ../sass/_custom.scss */
 ul.i-link-list > li a:hover {
   color: rgba(9, 124, 243, 0.4);
 }
 
-/* line 113, ../sass/_custom.scss */
+/* line 122, ../sass/_custom.scss */
 #svg-container {
   position: fixed;
   left: 50%;
@@ -1781,4 +1788,24 @@ ul.i-link-list > li a:hover {
   width: 1140px;
   height: 100%;
   padding: 0 15px;
+}
+
+/* line 131, ../sass/_custom.scss */
+.p-box {
+  position: relative;
+}
+
+/* line 134, ../sass/_custom.scss */
+.p-cover {
+  max-width: 100%;
+}
+
+/* line 137, ../sass/_custom.scss */
+.p-title {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  color: #fff;
+  font-size: 24px;
+  margin: 10px 0;
 }
