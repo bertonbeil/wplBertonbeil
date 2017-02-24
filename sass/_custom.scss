@@ -148,9 +148,8 @@ ul.i-link-list {
   position: fixed;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 1140px;
+  width: 1110px;
   height: 100%;
-  padding: 0 15px;
 }
 
 section.portfolio {
@@ -282,4 +281,25 @@ ul.modal-list {
       font-size: 50px;
     }
   }
+}
+
+
+// lines
+.decolines {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+    &--fixed {
+  	position: fixed;
+  	width: 100vw;
+  	height: 100vh;
+  }
+}
+
+.decoline {
+	position: absolute;
 }

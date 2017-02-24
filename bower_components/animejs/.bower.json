@@ -1,0 +1,41 @@
+{
+  "name": "animejs",
+  "description": "JavaScript animation engine",
+  "main": "anime.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juliangarnier/anime.git"
+  },
+  "keywords": [
+    "anime",
+    "animation",
+    "javascript",
+    "CSS",
+    "transforms",
+    "SVG",
+    "canvas"
+  ],
+  "authors": [
+    "Julian Garnier <hello@julian.gr>"
+  ],
+  "license": "MIT",
+  "homepage": "http://anime-js.com/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "2.0.0",
+  "_release": "2.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.0",
+    "commit": "7218293b28e9ef86084cf93b0c266bac9cb9b355"
+  },
+  "_source": "https://github.com/juliangarnier/anime.git",
+  "_target": "^2.0.0",
+  "_originalSource": "animejs",
+  "_direct": true
+}
