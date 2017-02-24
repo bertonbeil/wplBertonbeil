@@ -242,16 +242,19 @@ section.portfolio {
 
 // modal styles
 .modal-wrap {
+  transition-timing-function: cubic-bezier(1,0,1,0);
+  transition-delay: .5s;
+
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: $blue;
+  // background: $blue;
   z-index: -1;
   opacity: 0;
-  @include tr(.3);
   &.open {
+    transition-delay: 0s;
     opacity: 1;
     z-index: 400;
   }
@@ -264,7 +267,7 @@ section.portfolio {
 .open-modal {
   overflow: hidden;
 }
-a.close {
+a#close {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -292,6 +295,7 @@ ul.modal-list {
 	height: 100%;
 	top: 0;
 	left: 0;
+  z-index: -1;
 	pointer-events: none;
     &--fixed {
   	position: fixed;

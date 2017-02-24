@@ -109,7 +109,7 @@
 
 <!-- modal layout -->
 <div id="modalMore" class="modal-wrap">
-  <a href="#" class="close">
+  <a href="#" id="close">
     <i class="material-icons">close</i>
   </a><!-- close icon -->
   <div class="container">
@@ -119,9 +119,9 @@
       </div>
       <div class="col-sm-6">
         <ul class="modal-list">
-          <li><a href="">Item 1</a></li>
-          <li><a href="">Item 2</a></li>
-          <li><a href="">Item 3</a></li>
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
         </ul>
       </div>
     </div>
@@ -136,32 +136,13 @@
 <!-- bootstrap -->
 <!-- <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
 
+<script src="js/sketch.js"></script>
+
+
 <!-- custom -->
 <script src="js/main.js"></script>
-
-<script src="js/sketch.js"></script>
 <!-- lines -->
 <script>
-
-  var lineMaker = new LineMaker({
-      parent: {
-        element: '#svg-container',
-        position: 'absolute'
-      },
-      lines: [
-        {top: 0, left: '0%', width: 1, height: '100vh', color: '#CDCFD0', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 400, direction: 'TopBottom' }},
-        {top: 0, left: '25%', width: 1, height: '100vh', color: '#CDCFD0', hidden: true, animation: { duration: 1000, easing: 'easeInOutQuad', delay: 100, direction: 'BottomTop' }},
-        {top: 0, left: '50%', width: 1, height: '100vh', color: '#CDCFD0', hidden: true, animation: { duration: 500, easing: 'easeInOutQuad', delay: 0, direction: 'BottomTop' }},
-        {top: 0, left: '75%', width: 1, height: '100vh', color: '#CDCFD0', hidden: true, animation: { duration: 1000, easing: 'easeOutSine', delay: 400, direction: 'TopBottom' }},
-        {top: 0, left: '100%', width: 1, height: '100vh', color: '#CDCFD0', hidden: true, animation: { duration: 800, easing: 'easeOutSine', delay: 300, direction: 'BottomTop', color2: '#000' }}
-      ]
-  });
-
-
-  setTimeout(function() {
-    lineMaker.animateLinesIn();
-  }, 250);
-
 
 </script>
 </body>
