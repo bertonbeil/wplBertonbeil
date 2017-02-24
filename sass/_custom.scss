@@ -42,31 +42,8 @@ header.fixed {
   top: 0;
   height: 60px;
   line-height: 60px;
-  background: #E1F5FE;
-  background: linear-gradient(356deg, #0091ea, #4a148c);
-  background-size: 200% 200%;
-
-  -webkit-animation: AnimationName 20s ease infinite;
-  -moz-animation: AnimationName 20s ease infinite;
-  animation: AnimationName 20s ease infinite;
-
-  box-shadow: 0 1px 2px rgba(0, 0, 0, .46);
-}
-// anim
-@-webkit-keyframes AnimationName {
-    0%{background-position:57% 0%}
-    50%{background-position:44% 100%}
-    100%{background-position:57% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:57% 0%}
-    50%{background-position:44% 100%}
-    100%{background-position:57% 0%}
-}
-@keyframes AnimationName {
-    0%{background-position:57% 0%}
-    50%{background-position:44% 100%}
-    100%{background-position:57% 0%}
+  background: #FFF;
+  // box-shadow: 0 1px 2px rgba(0, 0, 0, .46);
 }
 
 a.h-logo {

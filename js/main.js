@@ -11,8 +11,10 @@ slMore.on( "mouseleave", function(){ slCl.css({transform: "rotate(90deg)"});});
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > 150) {
         $('.header').addClass('fixed');
+        navBordaer.animateLinesIn();
     } else {
         $('.header').removeClass('fixed');
+        navBordaer.animateLinesOut();
     }
 });
 
@@ -60,7 +62,7 @@ var lineMaker = new LineMaker({
     {top: 0, left: '25%', width: 1, height: '100vh', color: '#CDCFD0', hidden: true, animation: { duration: 1000, easing: 'easeInOutQuad', delay: 100, direction: 'BottomTop' }},
     {top: 0, left: '50%', width: 1, height: '100vh', color: '#CDCFD0', hidden: true, animation: { duration: 500, easing: 'easeInOutQuad', delay: 0, direction: 'BottomTop' }},
     {top: 0, left: '75%', width: 1, height: '100vh', color: '#CDCFD0', hidden: true, animation: { duration: 1000, easing: 'easeOutSine', delay: 400, direction: 'TopBottom' }},
-    {top: 0, left: '100%', width: 1, height: '100vh', color: '#CDCFD0', hidden: true, animation: { duration: 800, easing: 'easeOutSine', delay: 300, direction: 'BottomTop', color2: '#000' }}
+    {top: 0, left: '100%', width: 1, height: '100vh', color: '#CDCFD0', hidden: true, animation: { duration: 800, easing: 'easeOutSine', delay: 300, direction: 'BottomTop' }}
   ]
 });
 
@@ -74,6 +76,16 @@ var lineMakerModal = new LineMaker({
     {top: 0, left: '25%', width: '25%', height: '100vh', color: '#097cf3', hidden: true, animation: { duration: 300, easing: 'easeInOutQuad', delay: 50, direction: 'TopBottom' }},
     {top: 0, left: '50%', width: '25%', height: '100vh', color: '#097cf3', hidden: true, animation: { duration: 300, easing: 'easeInOutQuad', delay: 150, direction: 'TopBottom' }},
     {top: 0, left: '75%', width: '25%', height: '100vh', color: '#097cf3', hidden: true, animation: { duration: 300, easing: 'easeOutSine', delay: 0, direction: 'TopBottom' }}
+  ]
+});
+
+var navBordaer = new LineMaker({
+  parent: {
+    element: '.header',
+    position: 'absolute'
+  },
+  lines: [
+    {top: '100%', left: 0, width: '100%', height: 1, color: '#000', hidden: true, animation: { duration: 300, easing: 'easeOutSine', delay: 0, direction: 'LeftRight' }}
   ]
 });
 

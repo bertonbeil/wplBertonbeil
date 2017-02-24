@@ -1683,75 +1683,36 @@ header.fixed {
   top: 0;
   height: 60px;
   line-height: 60px;
-  background: #E1F5FE;
-  background: linear-gradient(356deg, #0091ea, #4a148c);
-  background-size: 200% 200%;
-  -webkit-animation: AnimationName 20s ease infinite;
-  -moz-animation: AnimationName 20s ease infinite;
-  animation: AnimationName 20s ease infinite;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.46);
+  background: #FFF;
 }
 
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 57% 0%;
-  }
-  50% {
-    background-position: 44% 100%;
-  }
-  100% {
-    background-position: 57% 0%;
-  }
-}
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 57% 0%;
-  }
-  50% {
-    background-position: 44% 100%;
-  }
-  100% {
-    background-position: 57% 0%;
-  }
-}
-@keyframes AnimationName {
-  0% {
-    background-position: 57% 0%;
-  }
-  50% {
-    background-position: 44% 100%;
-  }
-  100% {
-    background-position: 57% 0%;
-  }
-}
-/* line 72, ../sass/_custom.scss */
+/* line 49, ../sass/_custom.scss */
 a.h-logo {
   font-size: 24px;
   color: #34B46A;
   transition: all .2s ease-in-out;
 }
 
-/* line 77, ../sass/_custom.scss */
+/* line 54, ../sass/_custom.scss */
 ul.nav-list {
   float: right;
 }
-/* line 79, ../sass/_custom.scss */
+/* line 56, ../sass/_custom.scss */
 ul.nav-list > li {
   display: inline-block;
 }
-/* line 81, ../sass/_custom.scss */
+/* line 58, ../sass/_custom.scss */
 ul.nav-list > li a {
   font-size: 22px;
   transition: all 0.2s ease-in-out;
   border-bottom: 2px solid transparent;
 }
-/* line 85, ../sass/_custom.scss */
+/* line 62, ../sass/_custom.scss */
 ul.nav-list > li a:hover {
   border-color: #000;
 }
 
-/* line 91, ../sass/_custom.scss */
+/* line 68, ../sass/_custom.scss */
 .slash {
   height: 2px;
   width: 18px;
@@ -1761,27 +1722,27 @@ ul.nav-list > li a:hover {
   transform: rotate(90deg);
 }
 
-/* line 99, ../sass/_custom.scss */
+/* line 76, ../sass/_custom.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 102, ../sass/_custom.scss */
+/* line 79, ../sass/_custom.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 105, ../sass/_custom.scss */
+/* line 82, ../sass/_custom.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 112, ../sass/_custom.scss */
+/* line 89, ../sass/_custom.scss */
 .welcom-box {
   margin-top: 160px;
 }
 
-/* line 115, ../sass/_custom.scss */
+/* line 92, ../sass/_custom.scss */
 .into-text {
   color: #000;
   font-size: 42px;
@@ -1789,33 +1750,33 @@ ul.nav-list > li a:hover {
   margin: 20px 0;
   line-height: 1.3;
 }
-/* line 121, ../sass/_custom.scss */
+/* line 98, ../sass/_custom.scss */
 .into-text span {
   font-weight: 100;
 }
 
-/* line 126, ../sass/_custom.scss */
+/* line 103, ../sass/_custom.scss */
 ul.i-link-list {
   margin-top: 35px;
   float: left;
 }
-/* line 130, ../sass/_custom.scss */
+/* line 107, ../sass/_custom.scss */
 ul.i-link-list > li {
   display: inline-block;
 }
-/* line 133, ../sass/_custom.scss */
+/* line 110, ../sass/_custom.scss */
 ul.i-link-list > li a {
   font-size: 21px;
   color: #097cf3;
   margin-right: 20px;
   transition: all 0.2s ease-in-out;
 }
-/* line 138, ../sass/_custom.scss */
+/* line 115, ../sass/_custom.scss */
 ul.i-link-list > li a:hover {
   color: rgba(9, 124, 243, 0.4);
 }
 
-/* line 147, ../sass/_custom.scss */
+/* line 124, ../sass/_custom.scss */
 #svg-container {
   position: fixed;
   left: 50%;
@@ -1824,12 +1785,12 @@ ul.i-link-list > li a:hover {
   height: 100%;
 }
 
-/* line 155, ../sass/_custom.scss */
+/* line 132, ../sass/_custom.scss */
 section.portfolio {
   background: #F7FAFB;
 }
 
-/* line 159, ../sass/_custom.scss */
+/* line 136, ../sass/_custom.scss */
 .p-box {
   position: relative;
   width: 100%;
@@ -1841,32 +1802,32 @@ section.portfolio {
   transition: all 0.2s ease-in-out;
   box-shadow: 1px 3px 6px rgba(56, 80, 99, 0.3);
 }
-/* line 170, ../sass/_custom.scss */
+/* line 147, ../sass/_custom.scss */
 .p-box:hover {
   box-shadow: 2px 6px 10px rgba(56, 80, 99, 0.6);
 }
-/* line 173, ../sass/_custom.scss */
+/* line 150, ../sass/_custom.scss */
 .p-box:hover .p-cover {
   filter: blur(8px);
 }
-/* line 176, ../sass/_custom.scss */
+/* line 153, ../sass/_custom.scss */
 .p-box:hover .info-overlay {
   background: rgba(56, 80, 99, 0.6);
 }
-/* line 179, ../sass/_custom.scss */
+/* line 156, ../sass/_custom.scss */
 .p-box:hover .p-title {
   color: #F7FAFB;
   margin-top: 0;
   margin-left: 0;
 }
-/* line 184, ../sass/_custom.scss */
+/* line 161, ../sass/_custom.scss */
 .p-box:hover .p-description {
   color: #EEF3F7;
   bottom: 20px;
   left: 20px;
 }
 
-/* line 190, ../sass/_custom.scss */
+/* line 167, ../sass/_custom.scss */
 .p-cover-box {
   position: absolute;
   top: 0px;
@@ -1878,14 +1839,14 @@ section.portfolio {
   -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 }
 
-/* line 201, ../sass/_custom.scss */
+/* line 178, ../sass/_custom.scss */
 .p-cover {
   position: absolute;
   top: -10px;
   left: -10px;
 }
 
-/* line 206, ../sass/_custom.scss */
+/* line 183, ../sass/_custom.scss */
 .info-overlay {
   position: absolute;
   top: 0;
@@ -1901,7 +1862,7 @@ section.portfolio {
   background: rgba(56, 80, 99, 0.3);
 }
 
-/* line 220, ../sass/_custom.scss */
+/* line 197, ../sass/_custom.scss */
 .p-title {
   color: #385063;
   font-size: 24px;
@@ -1911,7 +1872,7 @@ section.portfolio {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 228, ../sass/_custom.scss */
+/* line 205, ../sass/_custom.scss */
 .p-seperetor {
   width: 100%;
   height: 1px;
@@ -1920,7 +1881,7 @@ section.portfolio {
   margin-bottom: 90px;
 }
 
-/* line 235, ../sass/_custom.scss */
+/* line 212, ../sass/_custom.scss */
 .round-chart {
   width: 120px;
   height: 120px;
@@ -1929,7 +1890,7 @@ section.portfolio {
   margin: 30px auto;
 }
 
-/* line 244, ../sass/_custom.scss */
+/* line 221, ../sass/_custom.scss */
 .modal-wrap {
   transition-timing-function: cubic-bezier(1, 0, 1, 0);
   transition-delay: .5s;
@@ -1941,45 +1902,45 @@ section.portfolio {
   z-index: -1;
   opacity: 0;
 }
-/* line 256, ../sass/_custom.scss */
+/* line 233, ../sass/_custom.scss */
 .modal-wrap.open {
   transition-delay: 0s;
   opacity: 1;
   z-index: 400;
 }
-/* line 262, ../sass/_custom.scss */
+/* line 239, ../sass/_custom.scss */
 .modal-wrap .container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-/* line 267, ../sass/_custom.scss */
+/* line 244, ../sass/_custom.scss */
 .open-modal {
   overflow: hidden;
 }
 
-/* line 270, ../sass/_custom.scss */
+/* line 247, ../sass/_custom.scss */
 a#close {
   position: absolute;
   top: 15px;
   right: 15px;
 }
 
-/* line 276, ../sass/_custom.scss */
+/* line 253, ../sass/_custom.scss */
 ul.modal-list {
   float: right;
 }
-/* line 279, ../sass/_custom.scss */
+/* line 256, ../sass/_custom.scss */
 ul.modal-list > li {
   margin-bottom: 10px;
 }
-/* line 282, ../sass/_custom.scss */
+/* line 259, ../sass/_custom.scss */
 ul.modal-list > li a {
   color: #EEF3F7;
   font-size: 50px;
 }
 
-/* line 291, ../sass/_custom.scss */
+/* line 268, ../sass/_custom.scss */
 .decolines {
   pointer-events: none;
   position: absolute;
@@ -1990,14 +1951,14 @@ ul.modal-list > li a {
   z-index: -1;
   pointer-events: none;
 }
-/* line 300, ../sass/_custom.scss */
+/* line 277, ../sass/_custom.scss */
 .decolines--fixed {
   position: fixed;
   width: 100vw;
   height: 100vh;
 }
 
-/* line 307, ../sass/_custom.scss */
+/* line 284, ../sass/_custom.scss */
 .decoline {
   position: absolute;
 }
