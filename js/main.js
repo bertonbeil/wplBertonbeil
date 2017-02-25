@@ -47,9 +47,7 @@ modalBtn.on('click',  function () {
 function openModal() {
   lineMakerModal.animateLinesIn();
   body.addClass('open-modal');
-  modal.addClass('open');
-
-  console.log('open');
+  modal.addClass('open'); //console.log('open');
 
   setTimeout(function () {
     showModalContent();
@@ -61,30 +59,27 @@ function closeModal() {
   setTimeout(function () {
     lineMakerModal.animateLinesOut();
     body.removeClass('open-modal');
-    modal.removeClass('open');
-
-    console.log('close');
+    modal.removeClass('open'); //console.log('close');
   }, 350);
 }
 
 function showModalContent() {
-  console.log('show content');
   aboutUsText.addClass('show');
   moreLinks.addClass('show');
   socialLinks.addClass('show');
+  // console.log('show content');
 }
 function closeModalContent() {
-  console.log('hide content');
   aboutUsText.removeClass('show');
   moreLinks.removeClass('show');
   socialLinks.removeClass('show');
+  // console.log('hide content');
 }
 
 portItem.hover(
     function() {
         $(this).addClass('hover');
-    },
-    function() {
+    }, function() {
         $(this).removeClass('hover');
     }
 );
