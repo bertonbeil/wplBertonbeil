@@ -35,13 +35,10 @@ header.header {
   width: 100%;
   line-height: 80px;
   z-index: 99;
-  transition: height .3s ease-in-out;
 }
 header.fixed {
   position: fixed;
   top: 0;
-  height: 60px;
-  line-height: 60px;
   background: #FFF;
   // box-shadow: 0 1px 2px rgba(0, 0, 0, .46);
 }
@@ -130,7 +127,7 @@ ul.i-link-list {
 }
 
 section.portfolio {
-  background: $aliceBlue;
+
 }
 
 .p-box {
@@ -138,14 +135,12 @@ section.portfolio {
   width: 100%;
   height: 420px;
   max-height: 420px;
-  border-radius: 7px;
   overflow: hidden;
   cursor: pointer;
   @include tr(.2);
-  box-shadow: 1px 3px 6px rgba($cello, .3);
 
-  &:hover {
-    box-shadow: 2px 6px 10px rgba($cello, 0.6)
+  > .decolines {
+    z-index: 99;
   }
   &:hover .p-cover {
     filter: blur(8px);
@@ -170,10 +165,7 @@ section.portfolio {
   left: 0px;
   width: 100%;
   height: 420px;
-  border-radius: 7px;
   overflow: hidden;
-  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
-
 }
 .p-cover {
   position: absolute;
@@ -189,7 +181,6 @@ section.portfolio {
   width: 100%;
   height: 100%;
   padding: 20px;
-  border-radius: 7px;
   z-index: 99;
   @include tr(.2);
   background: rgba($cello, .3);
@@ -237,6 +228,7 @@ section.portfolio {
   }
 
   .container {
+    height: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -250,6 +242,18 @@ a#close {
   right: 15px;
 }
 
+div.modal-social-row {
+  position: absolute;
+  bottom: 200px;
+
+  ul.social-list {
+    float: right;
+
+    > li a {
+      color: $w;
+    }
+  }
+}
 ul.modal-list {
   float: right;
 
@@ -263,7 +267,16 @@ ul.modal-list {
   }
 }
 
+.about-us-text,
+.more-links,
+.social-list {
+  opacity: 0;
+  @include tr(.3);
 
+  &.show {
+    opacity: 1;
+  }
+}
 // lines
 .decolines {
 	pointer-events: none;
