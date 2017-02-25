@@ -23,6 +23,12 @@ this.body = $('body');
 this.modal = $('#modalMore');
 this.modalBtn = $('#moreBtn');
 this.closeBtn = $('a#close');
+this.portItem = $('.p-box');
+
+// modal
+this.aboutUsText = $('.about-us-text');
+this.moreLinks = $('.more-links');
+this.socialLinks = $('.social-list');
 
 
 modalBtn.on('click',  function () {
@@ -42,15 +48,46 @@ function openModal() {
   lineMakerModal.animateLinesIn();
   body.addClass('open-modal');
   modal.addClass('open');
+
   console.log('open');
+
+  setTimeout(function () {
+    showModalContent();
+  }, 350);
 }
 function closeModal() {
-  lineMakerModal.animateLinesOut( {duration: 200} );
-  body.removeClass('open-modal');
-  modal.removeClass('open');
-  console.log('close');
+  closeModalContent();
+
+  setTimeout(function () {
+    lineMakerModal.animateLinesOut();
+    body.removeClass('open-modal');
+    modal.removeClass('open');
+
+    console.log('close');
+  }, 350);
 }
 
+function showModalContent() {
+  console.log('show content');
+  aboutUsText.addClass('show');
+  moreLinks.addClass('show');
+  socialLinks.addClass('show');
+}
+function closeModalContent() {
+  console.log('hide content');
+  aboutUsText.removeClass('show');
+  moreLinks.removeClass('show');
+  socialLinks.removeClass('show');
+}
+
+portItem.hover(
+    function() {
+        $(this).addClass('hover');
+    },
+    function() {
+        $(this).removeClass('hover');
+    }
+);
 
 var lineMaker = new LineMaker({
   parent: {
@@ -78,6 +115,7 @@ var lineMakerModal = new LineMaker({
     {top: 0, left: '75%', width: '25%', height: '100vh', color: '#097cf3', hidden: true, animation: { duration: 300, easing: 'easeOutSine', delay: 0, direction: 'TopBottom' }}
   ]
 });
+
 
 var navBordaer = new LineMaker({
   parent: {
