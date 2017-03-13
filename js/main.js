@@ -30,6 +30,8 @@ this.aboutUsText = $('.about-us-text');
 this.moreLinks = $('.more-links');
 this.socialLinks = $('.social-list');
 
+this.hambBtn = $('button.menu-hamb');
+
 
 modalBtn.on('click',  function () {
 
@@ -83,6 +85,34 @@ portItem.hover(
         $(this).removeClass('hover');
     }
 );
+
+// anime
+hambBtn.on('click', function() {
+  var hamburger = anime({
+    targets: '#hamburger .hamb-inner',
+    opacity: function(el) {
+      return el.getAttribute('data-o');
+    },
+    translateX: 0,
+    translateY: function(el) {
+      return el.getAttribute('data-y');
+    },
+     scale: 3,
+     rotate: function(el) {
+       return el.getAttribute('data-r');
+     },
+     duration: function() { return anime.random(1200, 1800); },
+     duration: function() { return anime.random(800, 1600); },
+     delay: function() { return anime.random(0, 1000); }
+  });
+});
+
+
+
+
+
+
+
 
 var lineMaker = new LineMaker({
   parent: {

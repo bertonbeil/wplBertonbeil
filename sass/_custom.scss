@@ -297,3 +297,24 @@ ul.modal-list {
 .decoline {
 	position: absolute;
 }
+
+
+// hamburger
+button.menu-hamb {
+  width: 40px;
+  height: 40px;
+  background: $tr;
+  outline: 0;
+  border: 0;
+  float: right;
+  margin-top: 20px;
+  cursor: pointer;
+  
+  .hamb-inner {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: $b;
+    margin: 6px 0;
+  }
+}

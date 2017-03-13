@@ -1978,3 +1978,23 @@ ul.modal-list > li a {
 .decoline {
   position: absolute;
 }
+
+/* line 303, ../sass/_custom.scss */
+button.menu-hamb {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  outline: 0;
+  border: 0;
+  float: right;
+  margin-top: 20px;
+  cursor: pointer;
+}
+/* line 313, ../sass/_custom.scss */
+button.menu-hamb .hamb-inner {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #000;
+  margin: 6px 0;
+}
