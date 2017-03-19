@@ -1,20 +1,3 @@
-$w: #fff;
-$b: #000;
-$tr: transparent;
-$bg: #EEF3F7;
-$greyText: #333;
-$cello: #385063;
-$darkGrey: #385063;
-$grey21: #212121;
-$aliceBlue: #F7FAFB;
-$patternBlue: #D3E9FA;
-$blue: #097cf3;
-
-// proxima-nova
-$husk: #B19A51;
-$greaySuva: #505050;
-$proximaLightGrey: #8B8B8B;
-$proximaDark: #1E1E1E;
 
 ::-webkit-scrollbar {
     display: none;
@@ -23,11 +6,6 @@ $proximaDark: #1E1E1E;
 body {
   font-family: 'Droid Serif', serif;
   font-family: 'Arvo', serif;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .row.no-gutters {
@@ -42,9 +20,7 @@ a {
 }
 
 
-footer.footer {
-  background: $greyText;
-}
+
 // header
 header.header {
   position: fixed;;
@@ -67,10 +43,11 @@ section.main-cover {
   top: 0;
   width: 100%;
   height: 100%;
+  color: $w;
   background-color: $proximaDark;
-  // background: url(../img/bg_2.jpg) no-repeat center center;
-  // background-size: cover;
-  // background-attachment: fixed;
+  background:linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/bg-work2.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
   z-index: -1;
 }
 section.content {
@@ -83,17 +60,28 @@ section.content {
   z-index: 1;
   background: #fff;
   box-shadow: 0 -2px 6px rgba($b, .28),
-              0 2px 6px rgba($b, .28)
+              0 2px 6px rgba($b, .28);
 }
 footer {
+  position: fixed;
+  bottom: -300px;
+  width: 100%;
+  height: 100px;
+  background: $proximaDark;
+  z-index: -1;
+
+  .f-wrap {
+    position: relative;
     width: 100%;
-    height: 300px;
-    bottom: -300px;
-    position: fixed;
-    z-index: -1;
+    height: 100px;
+    padding: 20px 0;
+    line-height: 60px;
+  }
 }
 
-
+.section-title {
+  color: $proximaDark;
+}
 a.h-logo {
   font-size: 24px;
   color: #34B46A;
@@ -138,13 +126,9 @@ ul.nav-list {
   margin-top: 160px;
 }
 .into-text {
-  color: $w;
-  font-size: 42px;
-  font-weight: 700;
-  margin: 20px 0;
-  line-height: 1.3;
+  @include custom-text($w, 3rem, 400);
   span {
-    font-weight: 100;
+      @include custom-text($husk);
   }
 }
 
@@ -157,11 +141,11 @@ ul.i-link-list {
 
     a {
       font-size: 21px;
-      color: $blue;
+      color: $husk;
       margin-right: 20px;
       @include tr(.2);
       &:hover {
-        color: rgba($blue, .4);
+        color: rgba($husk, .4);
       }
     }
   }
@@ -405,7 +389,7 @@ button.menu-hamb {
   width: 60px;
   border-radius: 50%;
   box-shadow: 0 2px 4px rgba($b, .28);
-  background: $grey21;
+  background: rgba($proximaDark, 1);
   z-index: 99;
 }
 
