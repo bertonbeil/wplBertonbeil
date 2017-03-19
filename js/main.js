@@ -58,6 +58,9 @@ var isAnimate = false;
 
 var CSStransforms = anime({
   targets: '#CSStransforms .el',
+  backgroundColor: [
+    {value: 'rgba(26, 26, 26, 1)'}
+  ],
   borderRadius: '50%',
   duration: 1000,
   scale: 100,
@@ -161,7 +164,6 @@ function scrollFooter(scrollY, heightFooter) {
         $('footer').css({
             'bottom': '0px'
         });
-        // alert('msg');
     } else {
         $('footer').css({
             'bottom': '-' + heightFooter + 'px'
@@ -172,8 +174,11 @@ function scrollFooter(scrollY, heightFooter) {
 $(window).ready( function() {
     var windowHeight        = $(window).height(),
         footerHeight        = $('footer').height(),
-        heightDocument      = (windowHeight) + ($('.content').height()) + ($('footer').height()) - 20;
+        heightDocument      = (windowHeight) + ($('.content').height()) + ($('footer').height()) + 160;
 
+    console.log(windowHeight);
+    console.log(heightDocument);
+    console.log(footerHeight);
     // Definindo o tamanho do elemento pra animar
     $('#scroll-animate, #scroll-animate-main').css({
         'height' :  heightDocument + 'px'
@@ -200,7 +205,7 @@ $(window).ready( function() {
         });
 
         $('section.main-cover').css({
-            'background-position-y' : 50 - (scroll * 100 / heightDocument) + '%'
+            'background-position-y' : 50 + (scroll * 1000 / heightDocument) + '%'
         });
 
         scrollFooter(scroll, footerHeight);

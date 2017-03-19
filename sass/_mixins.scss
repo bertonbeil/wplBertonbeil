@@ -1,3 +1,9 @@
 @mixin tr( $time ) {
   transition: all $time+s ease-in-out;
 }
+
+@mixin custom-text($color, $size: inherit, $weight: inherit) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+}
