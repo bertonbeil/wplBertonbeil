@@ -8,8 +8,22 @@
   <title>wpl BertonCorp</title>
 </head>
 <body>
-  <!-- drig container -->
-  <div id="svg-container"></div>
+
+  <button id="hamburger" class="menu-hamb">
+    <span data-r="40" data-y="10" data-o="1" class="hamb-inner"></span>
+    <span data-r="0" data-y="0" data-o="0"  class="hamb-inner"></span>
+    <span data-r="130" data-y="-10" data-o="1" class="hamb-inner"></span>
+  </button>
+
+  <div id="CSStransforms">
+    <div class="square el"></div>
+  </div>
+
+<div id="scroll-animate">
+  <div id="scroll-animate-main">
+    <div class="wrapper-parallax">
+
+
 <!-- nav -->
 <header class="header">
   <div class="container">
@@ -41,10 +55,7 @@
     <div class="row welcom-box">
       <div class="col-sm-8">
         <h1 class="into-text text-left">
-          Welcome to <span>BertonCorp.</span> <br>
-          We love create sites on WP. <br>
-          Based in Lviv. <br>
-          Contact us ASAP and get chill.
+          Probably we make thinks better
         </h1>
       </div>
     </div><!-- row -->
@@ -60,58 +71,129 @@
       </div>
     </div>
   </div><!-- container -->
+  <div class="shadower"></div>
 </section>
 <!--/ main cover -->
 <!-- portfolio -->
-<section class="portfolio">
+<section class="portfolio content">
   <div class="container">
+    <h1>Look</h1>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-md-6">
         <div class="p-box">
           <div class="info-overlay">
-            <h3 class="p-title">Fucking name</h3>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="round-chart"></div>
+            <div class="p-info">
+              <h3 class="p-title">Fucking name</h3>
+              <p class="p-category">UI, Wordpress</p>
+            </div>
+            <a href="#" class="p-full-screan">
+              <i class="material-icons">zoom_out_map</i>
+            </a>
+            <a href="#" class="p-explore">
+              <i class="material-icons">explore</i>
+            </a>
+          </div>
+          <div class="p-cover-box">
+            <img class="p-cover" src="img/white.png" alt="">
+          </div>
+        </div>
+      </div><!-- col-6 -->
+      <div class="row tt col-md-6">
+        <div class="col-sm-6">
+          <div class="p-box">
+            <div class="info-overlay">
+              <div class="p-info">
+                <h3 class="p-title">Fucking name</h3>
+                <p class="p-category">UI, Wordpress</p>
               </div>
-              <div class="col-sm-6">
-                <div class="round-chart"></div>
-              </div>
-              <div class="col-sm-6">
-                <div class="round-chart"></div>
-              </div>
-              <div class="col-sm-6">
-                <div class="round-chart"></div>
-              </div>
+              <a href="#" class="p-full-screan">
+                <i class="material-icons">zoom_out_map</i>
+              </a>
+              <a href="#" class="p-explore">
+                <i class="material-icons">explore</i>
+              </a>
+            </div>
+            <div class="p-cover-box">
+              <img class="p-cover" src="img/p2.png" alt="">
             </div>
           </div>
-          <div class="p-cover-box">
-            <img class="p-cover" src="img/port_cover.jpg" alt="">
+        </div>
+        <div class="col-sm-6">
+          <div class="p-box">
+            <div class="info-overlay">
+              <div class="p-info">
+                <h3 class="p-title">Fucking name</h3>
+                <p class="p-category">UI, Wordpress</p>
+              </div>
+              <a href="#" class="p-full-screan">
+                <i class="material-icons">zoom_out_map</i>
+              </a>
+              <a href="#" class="p-explore">
+                <i class="material-icons">explore</i>
+              </a>
+            </div>
+            <div class="p-cover-box">
+              <img class="p-cover" src="img/p4.gif" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="p-box">
+            <div class="info-overlay">
+              <div class="p-info">
+                <h3 class="p-title">Fucking name</h3>
+                <p class="p-category">UI, Wordpress</p>
+              </div>
+              <a href="#" class="p-full-screan">
+                <i class="material-icons">zoom_out_map</i>
+              </a>
+              <a href="#" class="p-explore">
+                <i class="material-icons">explore</i>
+              </a>
+            </div>
+            <div class="p-cover-box">
+              <img class="p-cover" src="img/p5.gif" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="p-box">
+            <div class="info-overlay">
+              <div class="p-info">
+                <h3 class="p-title">Fucking name</h3>
+                <p class="p-category">UI, Wordpress</p>
+              </div>
+              <a href="#" class="p-full-screan">
+                <i class="material-icons">zoom_out_map</i>
+              </a>
+              <a href="#" class="p-explore">
+                <i class="material-icons">explore</i>
+              </a>
+            </div>
+            <div class="p-cover-box">
+              <img class="p-cover" src="img/p7.gif" alt="">
+            </div>
           </div>
         </div>
       </div>
-      <!-- <div class="p-seperetor"></div> -->
-      <div class="col-sm-6">
-        <div class="p-box">
-          <div class="info-overlay">
-            <h3 class="p-title">Fucking name</h3>
-          </div>
-          <div class="p-cover-box">
-            <img class="p-cover" src="img/port_cover2.jpg" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="p-seperetor"></div>
     </div>
   </div>
 </section>
 
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, illo.</h2>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, illo.</h2>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, illo.</h2>
+  </div>
+</footer>
 
+    </div>
+  </div>
+</div>
 <!-- modal layout -->
 <div id="modalMore" class="modal-wrap">
-  <a href="#" id="close">
-    <i class="material-icons">close</i>
-  </a><!-- close icon -->
   <div class="container">
     <div class="row">
       <div class="col-sm-6">

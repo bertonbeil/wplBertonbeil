@@ -8,13 +8,30 @@ slMore.on( "mouseenter", function(){ slCl.css({transform: "rotate(125deg)"});});
 slMore.on( "mouseleave", function(){ slCl.css({transform: "rotate(90deg)"});});
 
 // nav scroll
+var jsHeader = $('section.main-cover');
+var $shadower = $('.shadower');
+var jsNav = $('header.header');
+
 $(window).bind('scroll', function () {
+    var hW = $(jsHeader).outerHeight();
+    var wScroll = $(this).scrollTop();
+    var navTop = $(jsNav).scrollTop();
+    var headScroll = (wScroll / 2);
+    var faderScroll = ( wScroll / hW );
+    var fadeToColor = Math.min(10, faderScroll);
+    $shadower.css({
+      filter: blur( fadeToColor + "px" )
+    });
+    jsNav.css({
+      background: "rgba(255, 255, 255, " + fadeToColor + " )"
+    });
+
+    console.log(fadeToColor + "px");
+    console.log(wScroll);
     if ($(window).scrollTop() > 150) {
         $('.header').addClass('fixed');
-        navBordaer.animateLinesIn();
     } else {
         $('.header').removeClass('fixed');
-        navBordaer.animateLinesOut();
     }
 });
 
@@ -30,26 +47,74 @@ this.aboutUsText = $('.about-us-text');
 this.moreLinks = $('.more-links');
 this.socialLinks = $('.social-list');
 
+this.hambBtn = $('button.menu-hamb');
 
-modalBtn.on('click',  function () {
+
+
+
+
+var bb = $('#hamburger');
+var isAnimate = false;
+
+var CSStransforms = anime({
+  targets: '#CSStransforms .el',
+  borderRadius: '50%',
+  duration: 1000,
+  scale: 100,
+  easing: [.4, 0, .2, 1]
+});
+CSStransforms.pause();
+CSStransforms.reverse();
+
+
+var hamburger = anime({
+  targets: '#hamburger .hamb-inner',
+  opacity: function(el) {
+    return el.getAttribute('data-o');
+  },
+  translateX: 0,
+  translateY: function(el) {
+    return el.getAttribute('data-y');
+  },
+   scale: 1.5,
+   rotate: function(el) {
+     return el.getAttribute('data-r');
+   },
+   duration: 1000
+  //  duration: function() { return anime.random(1000, 200); },
+  //  delay: function() { return anime.random(0, 1000); }
+});
+hamburger.pause();
+hamburger.reverse();
+// hambBtn.click( function(e) {
+//   CSStransforms.play();
+//   CSStransforms.reverse();
+// });
+
+
+bb.on('click',  function () {
 
   if( body.hasClass('open-modal') || modal.hasClass('open') ) {
+    hamburger.play();
+    hamburger.reverse();
+    CSStransforms.play();
+    CSStransforms.reverse();
     closeModal();
   } else {
+    CSStransforms.play();
+    CSStransforms.reverse();
+    hamburger.play();
+    hamburger.reverse();
     openModal();
   }
-  closeBtn.on('click', function () {
-    closeModal();
-  });
+
 });
 
 
 function openModal() {
-  lineMakerModal.animateLinesIn();
+  // lineMakerModal.animateLinesIn();
   body.addClass('open-modal');
-  modal.addClass('open');
-
-  console.log('open');
+  modal.addClass('open'); //console.log('open');
 
   setTimeout(function () {
     showModalContent();
@@ -59,74 +124,85 @@ function closeModal() {
   closeModalContent();
 
   setTimeout(function () {
-    lineMakerModal.animateLinesOut();
+    // lineMakerModal.animateLinesOut();
     body.removeClass('open-modal');
-    modal.removeClass('open');
-
-    console.log('close');
+    modal.removeClass('open'); //console.log('close');
   }, 350);
 }
 
 function showModalContent() {
-  console.log('show content');
   aboutUsText.addClass('show');
   moreLinks.addClass('show');
   socialLinks.addClass('show');
+  // console.log('show content');
 }
 function closeModalContent() {
-  console.log('hide content');
   aboutUsText.removeClass('show');
   moreLinks.removeClass('show');
   socialLinks.removeClass('show');
+  // console.log('hide content');
 }
 
 portItem.hover(
     function() {
         $(this).addClass('hover');
-    },
-    function() {
+    }, function() {
         $(this).removeClass('hover');
     }
 );
 
-var lineMaker = new LineMaker({
-  parent: {
-    element: '#svg-container',
-    position: 'absolute'
-  },
-  lines: [
-    {top: 0, left: '0%', width: 1, height: '100vh', color: '#CDCFD0', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 400, direction: 'TopBottom' }},
-    {top: 0, left: '25%', width: 1, height: '100vh', color: '#CDCFD0', hidden: true, animation: { duration: 1000, easing: 'easeInOutQuad', delay: 100, direction: 'BottomTop' }},
-    {top: 0, left: '50%', width: 1, height: '100vh', color: '#CDCFD0', hidden: true, animation: { duration: 500, easing: 'easeInOutQuad', delay: 0, direction: 'BottomTop' }},
-    {top: 0, left: '75%', width: 1, height: '100vh', color: '#CDCFD0', hidden: true, animation: { duration: 1000, easing: 'easeOutSine', delay: 400, direction: 'TopBottom' }},
-    {top: 0, left: '100%', width: 1, height: '100vh', color: '#CDCFD0', hidden: true, animation: { duration: 800, easing: 'easeOutSine', delay: 300, direction: 'BottomTop' }}
-  ]
+
+// #######
+function scrollFooter(scrollY, heightFooter) {
+    console.log(scrollY);
+    console.log(heightFooter);
+
+    if (scrollY >= heightFooter) {
+        $('footer').css({
+            'bottom': '0px'
+        });
+        // alert('msg');
+    } else {
+        $('footer').css({
+            'bottom': '-' + heightFooter + 'px'
+        });
+    }
+}
+
+$(window).ready( function() {
+    var windowHeight        = $(window).height(),
+        footerHeight        = $('footer').height(),
+        heightDocument      = (windowHeight) + ($('.content').height()) + ($('footer').height()) - 20;
+
+    // Definindo o tamanho do elemento pra animar
+    $('#scroll-animate, #scroll-animate-main').css({
+        'height' :  heightDocument + 'px'
+    });
+
+    // Definindo o tamanho dos elementos header e conteúdo
+    $('section.main-cover').css({
+        'height' : windowHeight + 'px',
+        'line-height' : windowHeight + 'px'
+    });
+
+    $('.wrapper-parallax').css({
+        'margin-top' : windowHeight + 'px'
+    });
+
+    scrollFooter(window.scrollY, footerHeight);
+
+    // ao dar rolagem
+    window.onscroll = function(){
+        var scroll = window.scrollY;
+
+        $('#scroll-animate-main').css({
+            'top' : '-' + scroll + 'px'
+        });
+
+        $('section.main-cover').css({
+            'background-position-y' : 50 - (scroll * 100 / heightDocument) + '%'
+        });
+
+        scrollFooter(scroll, footerHeight);
+    }
 });
-
-var lineMakerModal = new LineMaker({
-  parent: {
-    element: '#modalMore',
-    position: 'absolute'
-  },
-  lines: [
-    {top: 0, left: '0%', width: '25%', height: '100vh', color: '#097cf3', hidden: true, animation: { duration: 300, easing: 'easeInOutSine', delay: 100, direction: 'TopBottom' }},
-    {top: 0, left: '25%', width: '25%', height: '100vh', color: '#097cf3', hidden: true, animation: { duration: 300, easing: 'easeInOutQuad', delay: 50, direction: 'TopBottom' }},
-    {top: 0, left: '50%', width: '25%', height: '100vh', color: '#097cf3', hidden: true, animation: { duration: 300, easing: 'easeInOutQuad', delay: 150, direction: 'TopBottom' }},
-    {top: 0, left: '75%', width: '25%', height: '100vh', color: '#097cf3', hidden: true, animation: { duration: 300, easing: 'easeOutSine', delay: 0, direction: 'TopBottom' }}
-  ]
-});
-
-
-var navBordaer = new LineMaker({
-  parent: {
-    element: '.header',
-    position: 'absolute'
-  },
-  lines: [
-    {top: '100%', left: 0, width: '100%', height: 1, color: '#000', hidden: true, animation: { duration: 300, easing: 'easeOutSine', delay: 0, direction: 'LeftRight' }}
-  ]
-});
-
-setTimeout(function() {
-  lineMaker.animateLinesIn();
-}, 250);

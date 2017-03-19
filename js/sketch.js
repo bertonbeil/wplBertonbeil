@@ -357,7 +357,7 @@
 	 */
 	LineMaker.prototype.getTotalLines = function() {
 		return this.lines.length;
-	}
+	};
 
 	window.LineMaker = LineMaker;
 
