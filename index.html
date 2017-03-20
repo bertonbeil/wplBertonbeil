@@ -9,74 +9,75 @@
 </head>
 <body>
 
+<!-- hamburger -->
+<div id="hambBg" class="hamb-bg">
   <button id="hamburger" class="menu-hamb">
-    <span data-r="40" data-y="10" data-o="1" class="hamb-inner"></span>
-    <span data-r="0" data-y="0" data-o="0"  class="hamb-inner"></span>
-    <span data-r="130" data-y="-10" data-o="1" class="hamb-inner"></span>
+    <span data-r="40" data-y="10" data-o="1" class="menu-hamb__inner"></span>
+    <span data-r="0" data-y="0" data-o="0"  class="menu-hamb__inner"></span>
+    <span data-r="130" data-y="-10" data-o="1" class="menu-hamb__inner"></span>
   </button>
-
-  <div id="CSStransforms">
-    <div class="square el"></div>
-  </div>
-
-<div id="scroll-animate">
-  <div id="scroll-animate-main">
-    <div class="wrapper-parallax">
-
+  <div class="hamb-bg__item el"></div>
+</div>
 
 <!-- nav -->
 <header class="header">
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <a href="#" class="h-logo">BertonCorp</a>
+        <a href="#" class="h-logo">berton.co</a>
       </div>
       <div class="col-sm-6">
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="#" class="nav-link work-slash">
-              Work
-            </a>
+            <a href="#" class="nav-link work-slash">Work</a>
           </li>
-          <li><div class="slash"></div></li>
+          <li>
+            <div class="slash"></div>
+          </li>
           <li class="nav-item">
-            <a href="#" id="moreBtn" class="nav-link more-slash">
-              More
-            </a>
+            <a href="#" id="moreBtn" class="nav-link more-slash">More</a>
           </li>
         </ul>
       </div>
-    </div><!--/ row -->
+
+    </div> <!--/ row -->
   </div>
-</header><!--/ nav -->
+</header>
+<!--/ nav -->
+
+
+<div id="scroll-animate">
+  <div id="scroll-animate-main">
+    <div class="wrapper-parallax">
+
+
 <!-- main cover -->
 <section class="main-cover">
-  <div class="container text-center">
-    <div class="row welcom-box">
-      <div class="col-sm-12">
-        <h1 class="into-text"> Probably we make thinks <span>better</span> </h1>
-        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, hic.</p>
-      </div>
-    </div><!-- row -->
-    <div class="row">
-      <div class="col-sm-12">
-        <ul class="i-link-list">
-          <li><a href="" class="i-item">Facebook</a></li>
-          <li><a href="" class="i-item">Github</a></li>
-          <li><a href="" class="i-item">Twitter</a></li>
-          <li><a href="" class="i-item">Instagram</a></li>
-          <li><a href="" class="i-item">Behance</a></li>
-        </ul>
-      </div>
-    </div>
-  </div><!-- container -->
-  <div class="shadower"></div>
+  <div class="video-overlay">
+    <video playsinline autoplay muted loop poster="img/bg-work2.jpg" id="bgvid">
+        <!-- <source src="polina.webm" type="video/webm"> -->
+        <source src="video/bg-video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+
+  <div class="welcom-box">
+    <h1 class="into-text anim-into"> A digital product agency </h1>
+  </div>
+
+  <!-- <ul class="i-link-list">
+    <li><a href="" class="i-item">Facebook</a></li>
+    <li><a href="" class="i-item">Github</a></li>
+    <li><a href="" class="i-item">Twitter</a></li>
+    <li><a href="" class="i-item">Instagram</a></li>
+    <li><a href="" class="i-item">Behance</a></li>
+  </ul> -->
 </section>
 <!--/ main cover -->
 <!-- portfolio -->
 <section class="portfolio content">
   <div class="container">
-    <h1 class="section-title">Look</h1>
+    <h1 class="section-title">Recent projects</h1>
     <div class="row">
       <div class="col-md-6">
         <div class="p-box">

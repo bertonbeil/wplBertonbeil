@@ -26,10 +26,10 @@ header.header {
   position: fixed;;
   top: 150px;
   left: 0;
-  height: 80px;
   width: 100%;
-  line-height: 80px;
-  z-index: -1;
+  height: 200px;
+  line-height: 200px;
+  z-index: 1;
 }
 header.fixed {
   position: fixed;
@@ -39,16 +39,68 @@ header.fixed {
 }
 
 section.main-cover {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
   color: $w;
+  text-align: center;
   background-color: $proximaDark;
   background:linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/bg-work2.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   z-index: -1;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($proximaDark, .8);
+
+
+      // background-image: linear-gradient(white 1px, transparent 1px),
+      // linear-gradient(90deg, white 1px, transparent 1px),
+      // linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+      // linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+      // background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+      // background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+
+
+      background-image: url(../img/bg-pt.png);
+    }
+}
+video#bgvid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/bg-work2.jpg) no-repeat;
+    background-size: cover;
 }
 section.content {
   position: relative;
@@ -85,7 +137,7 @@ footer {
 a.h-logo {
   font-size: 24px;
   color: #34B46A;
-  transition: all .2s ease-in-out;
+  // transition: all .2s ease-in-out;
 }
 ul.nav-list {
   float: right;
@@ -93,7 +145,7 @@ ul.nav-list {
     display: inline-block;
     a {
       font-size: 22px;
-      @include tr(.2);
+      // @include tr(.2);
       border-bottom: 2px solid $tr;
       &:hover {
         border-color: $b;
@@ -123,12 +175,20 @@ ul.nav-list {
 //   height: 100vh;
 // }
 .welcom-box {
-  margin-top: 160px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  text-align: center;
+  max-width: 1170px;
 }
+
 .into-text {
-  @include custom-text($w, 3rem, 400);
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  @include custom-text($w, 8rem, 400);
   span {
-      @include custom-text($husk);
+      @include custom-text($supernova);
   }
 }
 
@@ -360,19 +420,19 @@ ul.modal-list {
 
 
 // hamburger
-button.menu-hamb {
+.menu-hamb {
   position: fixed;
   width: 40px;
   height: 40px;
   background: $tr;
   outline: 0;
   border: 0;
-  top: 20px;
+  top: 30px;
   right: 40px;
   cursor: pointer;
   z-index: 999;
 
-  .hamb-inner {
+  &__inner {
     display: block;
     width: 30px;
     height: 2px;
@@ -381,18 +441,21 @@ button.menu-hamb {
   }
 }
 
-#CSStransforms > .square {
-  position: fixed;
-  top: 10px;
-  right: 28px;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba($b, .28);
-  background: rgba($proximaDark, 1);
-  z-index: 99;
-}
+.hamb-bg {
 
+  &__item {
+    position: fixed;
+    top: 19px;
+    right: 29px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    // box-shadow: 0 2px 4px rgba($b, .28);
+    background: rgba($nero, 0);
+    transform: scale(0);
+    z-index: 99;
+  }
+}
 
 
 #scroll-animate {

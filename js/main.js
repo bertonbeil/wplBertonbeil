@@ -15,23 +15,33 @@ var jsNav = $('header.header');
 $(window).bind('scroll', function () {
     var hW = $(jsHeader).outerHeight();
     var wScroll = $(this).scrollTop();
-    var navTop = $(jsNav).scrollTop();
+    var navTop = $(jsNav).height();
     var headScroll = (wScroll / 2);
     var faderScroll = ( wScroll / hW );
     var fadeToColor = Math.min(10, faderScroll);
-    $shadower.css({
-      filter: blur( fadeToColor + "px" )
-    });
-    jsNav.css({
-      background: "rgba(255, 255, 255, " + fadeToColor + " )"
-    });
 
-    console.log(fadeToColor + "px");
+
+
+
+    // console.log(wScroll);
     console.log(wScroll);
-    if ($(window).scrollTop() > 150) {
-        $('.header').addClass('fixed');
-    } else {
-        $('.header').removeClass('fixed');
+
+    if ( navTop > 100 || wScroll < 500) {
+      console.log(wScroll);
+      jsNav.css({
+        'background': "rgba(0, 0, 0, " + fadeToColor * 2 + " )",
+        'height': 200 - (fadeToColor * 180),
+        'line-height': 200 - (fadeToColor * 180) + 'px',
+        'top': 150 - (fadeToColor * 260)
+      });
+    }
+    if ( navTop < 100 || wScroll > 500 ) {
+      console.log(wScroll);
+      jsNav.css({
+        'top': 0,
+        'height': 100,
+        'line-height': '100px'
+      });
     }
 });
 
@@ -56,22 +66,22 @@ this.hambBtn = $('button.menu-hamb');
 var bb = $('#hamburger');
 var isAnimate = false;
 
-var CSStransforms = anime({
-  targets: '#CSStransforms .el',
+var hambBg = anime({
+  targets: '#hambBg .el',
   backgroundColor: [
-    {value: 'rgba(26, 26, 26, 1)'}
+    {value: 'hsl(0, 0%, 10%)'}
   ],
   borderRadius: '50%',
   duration: 1000,
-  scale: 100,
+  scale: [0, 100],
   easing: [.4, 0, .2, 1]
 });
-CSStransforms.pause();
-CSStransforms.reverse();
+hambBg.pause();
+hambBg.reverse();
 
 
 var hamburger = anime({
-  targets: '#hamburger .hamb-inner',
+  targets: '#hamburger .menu-hamb__inner',
   opacity: function(el) {
     return el.getAttribute('data-o');
   },
@@ -90,8 +100,8 @@ var hamburger = anime({
 hamburger.pause();
 hamburger.reverse();
 // hambBtn.click( function(e) {
-//   CSStransforms.play();
-//   CSStransforms.reverse();
+//   hambBg.play();
+//   hambBg.reverse();
 // });
 
 
@@ -100,12 +110,12 @@ bb.on('click',  function () {
   if( body.hasClass('open-modal') || modal.hasClass('open') ) {
     hamburger.play();
     hamburger.reverse();
-    CSStransforms.play();
-    CSStransforms.reverse();
+    hambBg.play();
+    hambBg.reverse();
     closeModal();
   } else {
-    CSStransforms.play();
-    CSStransforms.reverse();
+    hambBg.play();
+    hambBg.reverse();
     hamburger.play();
     hamburger.reverse();
     openModal();
@@ -157,9 +167,6 @@ portItem.hover(
 
 // #######
 function scrollFooter(scrollY, heightFooter) {
-    console.log(scrollY);
-    console.log(heightFooter);
-
     if (scrollY >= heightFooter) {
         $('footer').css({
             'bottom': '0px'
@@ -176,9 +183,6 @@ $(window).ready( function() {
         footerHeight        = $('footer').height(),
         heightDocument      = (windowHeight) + ($('.content').height()) + ($('footer').height()) + 160;
 
-    console.log(windowHeight);
-    console.log(heightDocument);
-    console.log(footerHeight);
     // Definindo o tamanho do elemento pra animar
     $('#scroll-animate, #scroll-animate-main').css({
         'height' :  heightDocument + 'px'
@@ -204,9 +208,13 @@ $(window).ready( function() {
             'top' : '-' + scroll + 'px'
         });
 
-        $('section.main-cover').css({
-            'background-position-y' : 50 + (scroll * 1000 / heightDocument) + '%'
-        });
+        // $('section.main-cover').css({
+        //     'background-position-y' : 50 + (scroll * 1000 / heightDocument) + '%'
+        // });
+
+        // $('#bgvid').css({
+        //     'transform' : 'translateX(-50%) translateY(-' + 5 + (scroll * 10 / heightDocument) + '%' + ')'
+        // });
 
         scrollFooter(scroll, footerHeight);
     }
