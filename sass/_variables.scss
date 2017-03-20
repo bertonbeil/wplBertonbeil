@@ -14,6 +14,9 @@ $aliceBlue: #F7FAFB;
 $patternBlue: #D3E9FA;
 $blue: #097cf3;
 
+// material
+$w100: #F5F5F5;
+
 // proxima-nova
 $husk: #B19A51;
 $greySuva: #505050;
@@ -48,12 +51,12 @@ $font-size-h6: 1rem !default;
 $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-family:   inherit !default;
 $headings-font-weight:   500 !default;
-$headings-line-height:   1.1 !default;
+$headings-line-height:   1.5;
 $headings-color:         inherit !default;
 
 $p-margin-bottom: ($spacer / 2) !default;
 $p-font-weight:   400 !default;
-$p-line-height:   1.1 !default;
+$p-line-height:   1.3 !default;
 $p-color:         inherit !default;
 
 $lead-font-size:   1.25rem !default;

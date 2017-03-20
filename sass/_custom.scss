@@ -23,42 +23,64 @@ body {
 
 // header
 header.header {
-  position: fixed;;
-  top: 150px;
-  left: 0;
-  width: 100%;
-  height: 200px;
-  line-height: 200px;
-  z-index: 1;
-}
-header.fixed {
   position: fixed;
   top: 0;
-  background: #FFF;
-  // box-shadow: 0 1px 2px rgba(0, 0, 0, .46);
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: rgba($b, .6);
+  z-index: 500;
+}
+
+a.h-logo {
+  display: block;
+  line-height: 30px;
+  font-size: 24px;
+  padding: 35px;
+}
+.navbar {
+  float: right;
+
+  > li {
+      float: right;
+      height: 100px;
+      border-bottom: 0px solid $tr;
+      @include tr(.2);
+      &:hover {
+        border-bottom: 5px solid $supernova;
+      }
+
+      a {
+        display: block;
+        line-height: 30px;
+        font-size: 22px;
+        padding: 35px;
+        color: $w100;
+        opacity: .85;
+        @include tr(.2);
+        &:hover {
+          opacity: 1;
+          border-color: $b;
+        }
+      }
+  }
 }
 
 section.main-cover {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   color: $w;
   text-align: center;
   background-color: $proximaDark;
   background:linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/bg-work2.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  z-index: -1;
+  z-index: 0;
 }
 .video-overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -73,16 +95,6 @@ section.main-cover {
       width: 100%;
       height: 100%;
       background-color: rgba($proximaDark, .8);
-
-
-      // background-image: linear-gradient(white 1px, transparent 1px),
-      // linear-gradient(90deg, white 1px, transparent 1px),
-      // linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
-      // linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
-      // background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
-      // background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
-
-
       background-image: url(../img/bg-pt.png);
     }
 }
@@ -111,16 +123,14 @@ section.content {
   color: $bg;
   z-index: 1;
   background: #fff;
-  box-shadow: 0 -2px 6px rgba($b, .28),
-              0 2px 6px rgba($b, .28);
 }
 footer {
-  position: fixed;
-  bottom: -300px;
+  position: relative;
+  bottom: 0;
   width: 100%;
   height: 100px;
   background: $proximaDark;
-  z-index: -1;
+  z-index: 1;
 
   .f-wrap {
     position: relative;
@@ -134,25 +144,7 @@ footer {
 .section-title {
   color: $proximaDark;
 }
-a.h-logo {
-  font-size: 24px;
-  color: #34B46A;
-  // transition: all .2s ease-in-out;
-}
-ul.nav-list {
-  float: right;
-  > li {
-    display: inline-block;
-    a {
-      font-size: 22px;
-      // @include tr(.2);
-      border-bottom: 2px solid $tr;
-      &:hover {
-        border-color: $b;
-      }
-    }
-  }
-}
+
 .slash{
   height: 2px;
   width: 18px;
@@ -175,18 +167,14 @@ ul.nav-list {
 //   height: 100vh;
 // }
 .welcom-box {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  text-align: center;
+  text-align: left;;
   max-width: 1170px;
+  padding-top: 20rem;
+  height: 50rem;
 }
-
 .into-text {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  @include custom-text($w, 8rem, 400);
+  @include custom-text($w, 5.8rem, 400);
+  margin-bottom: 50px;
   span {
       @include custom-text($supernova);
   }
@@ -455,48 +443,4 @@ ul.modal-list {
     transform: scale(0);
     z-index: 99;
   }
-}
-
-
-#scroll-animate {
-    overflow: hidden;
-}
-#scroll-animate-main {
-    width: 100%;
-    left: 0;
-    position: fixed;
-}
-#heightPage,
-#heightScroll {
-    width: 10px;
-    top: 0;
-    position: absolute;
-    z-index: 99;
-}
-#heightPage {
-    left: 0;
-}
-#heightScroll {
-    right: 0;
-}
-.wrapper-parallax {
-    margin-top: 100%;
-    margin-bottom: 300px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-section.main-cover,
-footer.footer,
-#scroll-animate-main
-{
-  -webkit-transition-property: all;
-     -moz-transition-property: all;
-      transition-property: all;
-
-  -webkit-transition-duration: 0.4s;
-     -moz-transition-duration: 0.4s;
-      transition-duration: 0.4s;
-
-  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
-     -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
-      transition-timing-function: cubic-bezier(0, 0, 0, 1);
 }
