@@ -22,6 +22,32 @@ this.socialLinks = $('.social-list');
 
 this.hambBtn = $('button.menu-hamb');
 
+// nav scroll
+$('.navbar li').click(function(event) {
+  event.preventDefault();
+  $('.navbar svg').remove();
+
+  var x = event.pageX;
+  var y = event.pageY;
+  var clickX = x - $(this).offset().left;
+  var clickY = y - $(this).offset().top;
+  var block = this;
+  var setX = parseInt(clickX);
+  var setY = parseInt(clickY);
+
+  $(this).append('<svg><circle cx="'+setX+'" cy="'+setY+'" r="'+0+'"></circle></svg>');
+
+  var circle = $(block).find("circle");
+  circle.animate({
+      "r": $(block).outerWidth()
+  }, {
+      duration: 250,
+      step: function(val) {
+          circle.attr("r", val);
+      }
+  });
+});
+
 
 var bb = $('#hamburger');
 var isAnimate = false;
