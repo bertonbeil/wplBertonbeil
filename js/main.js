@@ -7,33 +7,6 @@ slWork.on( "mouseleave", function(){ slCl.css({transform: "rotate(90deg)"});});
 slMore.on( "mouseenter", function(){ slCl.css({transform: "rotate(125deg)"});});
 slMore.on( "mouseleave", function(){ slCl.css({transform: "rotate(90deg)"});});
 
-// nav scroll
-var jsHeader = $('section.main-cover');
-var $shadower = $('.shadower');
-var jsNav = $('header.header');
-
-$(window).bind('scroll', function () {
-    var hW = $(jsHeader).outerHeight();
-    var wScroll = $(this).scrollTop();
-    var navTop = $(jsNav).scrollTop();
-    var headScroll = (wScroll / 2);
-    var faderScroll = ( wScroll / hW );
-    var fadeToColor = Math.min(10, faderScroll);
-    $shadower.css({
-      filter: blur( fadeToColor + "px" )
-    });
-    jsNav.css({
-      background: "rgba(255, 255, 255, " + fadeToColor + " )"
-    });
-
-    console.log(fadeToColor + "px");
-    console.log(wScroll);
-    if ($(window).scrollTop() > 150) {
-        $('.header').addClass('fixed');
-    } else {
-        $('.header').removeClass('fixed');
-    }
-});
 
 // modal window
 this.body = $('body');
@@ -49,29 +22,52 @@ this.socialLinks = $('.social-list');
 
 this.hambBtn = $('button.menu-hamb');
 
+// nav scroll
+$('.navbar li').click(function(event) {
+  event.preventDefault();
+  $('.navbar svg').remove();
 
+  var x = event.pageX;
+  var y = event.pageY;
+  var clickX = x - $(this).offset().left;
+  var clickY = y - $(this).offset().top;
+  var block = this;
+  var setX = parseInt(clickX);
+  var setY = parseInt(clickY);
 
+  $(this).append('<svg><circle cx="'+setX+'" cy="'+setY+'" r="'+0+'"></circle></svg>');
+
+  var circle = $(block).find("circle");
+  circle.animate({
+      "r": $(block).outerWidth()
+  }, {
+      duration: 250,
+      step: function(val) {
+          circle.attr("r", val);
+      }
+  });
+});
 
 
 var bb = $('#hamburger');
 var isAnimate = false;
 
-var CSStransforms = anime({
-  targets: '#CSStransforms .el',
+var hambBg = anime({
+  targets: '#hambBg .el',
   backgroundColor: [
-    {value: 'rgba(26, 26, 26, 1)'}
+    {value: 'hsl(0, 0%, 10%)'}
   ],
   borderRadius: '50%',
   duration: 1000,
-  scale: 100,
+  scale: [0, 100],
   easing: [.4, 0, .2, 1]
 });
-CSStransforms.pause();
-CSStransforms.reverse();
+hambBg.pause();
+hambBg.reverse();
 
 
 var hamburger = anime({
-  targets: '#hamburger .hamb-inner',
+  targets: '#hamburger .menu-hamb__inner',
   opacity: function(el) {
     return el.getAttribute('data-o');
   },
@@ -90,8 +86,8 @@ var hamburger = anime({
 hamburger.pause();
 hamburger.reverse();
 // hambBtn.click( function(e) {
-//   CSStransforms.play();
-//   CSStransforms.reverse();
+//   hambBg.play();
+//   hambBg.reverse();
 // });
 
 
@@ -100,12 +96,12 @@ bb.on('click',  function () {
   if( body.hasClass('open-modal') || modal.hasClass('open') ) {
     hamburger.play();
     hamburger.reverse();
-    CSStransforms.play();
-    CSStransforms.reverse();
+    hambBg.play();
+    hambBg.reverse();
     closeModal();
   } else {
-    CSStransforms.play();
-    CSStransforms.reverse();
+    hambBg.play();
+    hambBg.reverse();
     hamburger.play();
     hamburger.reverse();
     openModal();
@@ -153,61 +149,3 @@ portItem.hover(
         $(this).removeClass('hover');
     }
 );
-
-
-// #######
-function scrollFooter(scrollY, heightFooter) {
-    console.log(scrollY);
-    console.log(heightFooter);
-
-    if (scrollY >= heightFooter) {
-        $('footer').css({
-            'bottom': '0px'
-        });
-    } else {
-        $('footer').css({
-            'bottom': '-' + heightFooter + 'px'
-        });
-    }
-}
-
-$(window).ready( function() {
-    var windowHeight        = $(window).height(),
-        footerHeight        = $('footer').height(),
-        heightDocument      = (windowHeight) + ($('.content').height()) + ($('footer').height()) + 160;
-
-    console.log(windowHeight);
-    console.log(heightDocument);
-    console.log(footerHeight);
-    // Definindo o tamanho do elemento pra animar
-    $('#scroll-animate, #scroll-animate-main').css({
-        'height' :  heightDocument + 'px'
-    });
-
-    // Definindo o tamanho dos elementos header e conteúdo
-    $('section.main-cover').css({
-        'height' : windowHeight + 'px',
-        'line-height' : windowHeight + 'px'
-    });
-
-    $('.wrapper-parallax').css({
-        'margin-top' : windowHeight + 'px'
-    });
-
-    scrollFooter(window.scrollY, footerHeight);
-
-    // ao dar rolagem
-    window.onscroll = function(){
-        var scroll = window.scrollY;
-
-        $('#scroll-animate-main').css({
-            'top' : '-' + scroll + 'px'
-        });
-
-        $('section.main-cover').css({
-            'background-position-y' : 50 + (scroll * 1000 / heightDocument) + '%'
-        });
-
-        scrollFooter(scroll, footerHeight);
-    }
-});

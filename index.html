@@ -9,173 +9,82 @@
 </head>
 <body>
 
+<!-- hamburger -->
+<div id="hambBg" class="hamb-bg">
   <button id="hamburger" class="menu-hamb">
-    <span data-r="40" data-y="10" data-o="1" class="hamb-inner"></span>
-    <span data-r="0" data-y="0" data-o="0"  class="hamb-inner"></span>
-    <span data-r="130" data-y="-10" data-o="1" class="hamb-inner"></span>
+    <span data-r="40" data-y="10" data-o="1" class="menu-hamb__inner"></span>
+    <span data-r="0" data-y="0" data-o="0"  class="menu-hamb__inner"></span>
+    <span data-r="130" data-y="-10" data-o="1" class="menu-hamb__inner"></span>
   </button>
-
-  <div id="CSStransforms">
-    <div class="square el"></div>
-  </div>
-
-<div id="scroll-animate">
-  <div id="scroll-animate-main">
-    <div class="wrapper-parallax">
-
+  <div class="hamb-bg__item el"></div>
+</div>
 
 <!-- nav -->
 <header class="header">
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <a href="#" class="h-logo">BertonCorp</a>
+        <a href="#" class="h-logo">berton.co</a>
       </div>
       <div class="col-sm-6">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#" class="nav-link work-slash">
-              Work
-            </a>
+        <ul class="navbar">
+          <li>
+            <a href="#" class="navbar-link work-slash">Work</a>
           </li>
-          <li><div class="slash"></div></li>
-          <li class="nav-item">
-            <a href="#" id="moreBtn" class="nav-link more-slash">
-              More
-            </a>
+          <li>
+            <a href="#" class="navbar-link more-slash">Inspiration</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link more-slash">About Us</a>
           </li>
         </ul>
       </div>
-    </div><!--/ row -->
+
+    </div> <!--/ row -->
   </div>
-</header><!--/ nav -->
+</header>
+<!--/ nav -->
+
+
+
 <!-- main cover -->
 <section class="main-cover">
-  <div class="container text-center">
-    <div class="row welcom-box">
-      <div class="col-sm-12">
-        <h1 class="into-text"> Probably we make thinks <span>better</span> </h1>
-        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, hic.</p>
-      </div>
-    </div><!-- row -->
-    <div class="row">
-      <div class="col-sm-12">
-        <ul class="i-link-list">
-          <li><a href="" class="i-item">Facebook</a></li>
-          <li><a href="" class="i-item">Github</a></li>
-          <li><a href="" class="i-item">Twitter</a></li>
-          <li><a href="" class="i-item">Instagram</a></li>
-          <li><a href="" class="i-item">Behance</a></li>
-        </ul>
-      </div>
+  <div class="video-overlay">
+    <video playsinline autoplay muted loop poster="img/bg-work2.jpg" id="bgvid">
+        <!-- <source src="polina.webm" type="video/webm"> -->
+        <source src="video/bg-video.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="container">
+    <div class="welcom-box">
+      <h1 class="into-text anim-into">A digital product agency </h1>
+      <h2>Probably we just make thinks better <br>
+          we appreciate every detail <br>
+          we will transform your sketch into business <br>
+          though right now
+      </h2>
+      <form class="mailform" action="">
+        <input class="mailform_input" type="email" name="email" placeholder="your@mail.com" required="">
+        <button type="submit" class="mailform_submit"><i class="material-icons">send</i></button>
+      </form>
     </div>
-  </div><!-- container -->
-  <div class="shadower"></div>
+
+    <ul class="i-link-list">
+      <li><a href="" class="i-item">Facebook</a></li>
+      <li><a href="" class="i-item">Github</a></li>
+      <li><a href="" class="i-item">Twitter</a></li>
+      <li><a href="" class="i-item">Instagram</a></li>
+      <li><a href="" class="i-item">Behance</a></li>
+    </ul>
+  </div>
+
 </section>
 <!--/ main cover -->
 <!-- portfolio -->
 <section class="portfolio content">
   <div class="container">
-    <h1 class="section-title">Look</h1>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="p-box">
-          <div class="info-overlay">
-            <div class="p-info">
-              <h3 class="p-title">Fucking name</h3>
-              <p class="p-category">UI, Wordpress</p>
-            </div>
-            <a href="#" class="p-full-screan">
-              <i class="material-icons">zoom_out_map</i>
-            </a>
-            <a href="#" class="p-explore">
-              <i class="material-icons">explore</i>
-            </a>
-          </div>
-          <div class="p-cover-box">
-            <img class="p-cover" src="img/white.png" alt="">
-          </div>
-        </div>
-      </div><!-- col-6 -->
-      <div class="row tt col-md-6">
-        <div class="col-sm-6">
-          <div class="p-box">
-            <div class="info-overlay">
-              <div class="p-info">
-                <h3 class="p-title">Fucking name</h3>
-                <p class="p-category">UI, Wordpress</p>
-              </div>
-              <a href="#" class="p-full-screan">
-                <i class="material-icons">zoom_out_map</i>
-              </a>
-              <a href="#" class="p-explore">
-                <i class="material-icons">explore</i>
-              </a>
-            </div>
-            <div class="p-cover-box">
-              <img class="p-cover" src="img/p2.png" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="p-box">
-            <div class="info-overlay">
-              <div class="p-info">
-                <h3 class="p-title">Fucking name</h3>
-                <p class="p-category">UI, Wordpress</p>
-              </div>
-              <a href="#" class="p-full-screan">
-                <i class="material-icons">zoom_out_map</i>
-              </a>
-              <a href="#" class="p-explore">
-                <i class="material-icons">explore</i>
-              </a>
-            </div>
-            <div class="p-cover-box">
-              <img class="p-cover" src="img/p4.gif" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="p-box">
-            <div class="info-overlay">
-              <div class="p-info">
-                <h3 class="p-title">Fucking name</h3>
-                <p class="p-category">UI, Wordpress</p>
-              </div>
-              <a href="#" class="p-full-screan">
-                <i class="material-icons">zoom_out_map</i>
-              </a>
-              <a href="#" class="p-explore">
-                <i class="material-icons">explore</i>
-              </a>
-            </div>
-            <div class="p-cover-box">
-              <img class="p-cover" src="img/p5.gif" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="p-box">
-            <div class="info-overlay">
-              <div class="p-info">
-                <h3 class="p-title">Fucking name</h3>
-                <p class="p-category">UI, Wordpress</p>
-              </div>
-              <a href="#" class="p-full-screan">
-                <i class="material-icons">zoom_out_map</i>
-              </a>
-              <a href="#" class="p-explore">
-                <i class="material-icons">explore</i>
-              </a>
-            </div>
-            <div class="p-cover-box">
-              <img class="p-cover" src="img/p7.gif" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h1 class="section-title">Recent projects</h1>
+
   </div>
 </section>
 
@@ -188,9 +97,7 @@
   </div>
 </footer>
 
-    </div>
-  </div>
-</div>
+
 <!-- modal layout -->
 <div id="modalMore" class="modal-wrap">
   <div class="container">
